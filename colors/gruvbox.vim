@@ -1202,6 +1202,7 @@ hi! link jsGlobalNodeObjects GruvboxBlue
 hi! link jsGlobalObjects GruvboxBlue
 hi! link jsObjectKey GruvboxGreenBold
 hi! link jsFunction GruvboxAqua
+hi! link jsFuncCall GruvboxBlue
 hi! link jsFuncParens GruvboxFg3
 hi! link jsParens GruvboxFg3
 hi! link jsNull GruvboxPurple
