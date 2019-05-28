@@ -550,7 +550,7 @@ hi! link VisualNOS Visual
 call s:HL('Search', s:hls_highlight, s:bg0, s:inverse)
 call s:HL('IncSearch', s:hls_cursor, s:bg0, s:inverse)
 
-call s:HL('QuickFixLine', s:bg0, s:red, s:bold) 
+call s:HL('QuickFixLine', s:bg0, s:yellow, s:bold) 
 
 call s:HL('Underlined', s:blue, s:none, s:underline)
 
