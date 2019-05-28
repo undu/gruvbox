@@ -336,7 +336,7 @@ if exists('g:gruvbox_hls_cursor')
   let s:hls_cursor = get(s:gb, g:gruvbox_hls_cursor)
 endif
 
-let s:hls_highlight = s:orange
+let s:hls_highlight = s:yellow
 if exists('g:gruvbox_hls_highlight')
   let s:hls_highlight = get(s:gb, g:gruvbox_hls_highlight)
 endif
