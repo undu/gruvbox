@@ -8,10 +8,12 @@ Designed as a bright theme with pastel 'retro groove' colors and light/dark mode
    [jellybeans]: https://github.com/nanotech/jellybeans.vim
    [solarized]: http://ethanschoonover.com/solarized
 
+This is the community edition of gruvbox, created to merge recent pull requests and fix recent issues.
+
 Attention
 ---------
 
-1. [Read this first](https://github.com/morhetz/gruvbox/wiki/Terminal-specific)
+1. [Read this first](https://github.com/gruvbox-community/gruvbox/wiki/Terminal-specific)
 2. Typeface from gallery is [Fantasque Sans Mono](https://github.com/belluzj/fantasque-sans)
 3. Typeface from screenshots below is [Fira Mono](http://www.carrois.com/fira-4-1/)
 
@@ -20,7 +22,7 @@ Screenshots
 
 Refer [Gallery][] for more syntax-specific screenshots.
 
-   [Gallery]: https://github.com/morhetz/gruvbox/wiki/Gallery
+   [Gallery]: https://github.com/gruvbox-community/gruvbox/wiki/Gallery
 
 ### Dark mode
 
@@ -50,7 +52,7 @@ Contrast options
 
 Refer [wiki section][] for contrast configuration and other options.
 
-   [wiki section]: https://github.com/morhetz/gruvbox/wiki/Configuration#ggruvbox_contrast_dark
+   [wiki section]: https://github.com/gruvbox-community/gruvbox/wiki/Configuration#ggruvbox_contrast_dark
 
 ![Contrast Options](http://i.imgur.com/5MSbe6T.png)
 
@@ -59,7 +61,7 @@ Documentation
 
 Please check [wiki][] for installation details, terminal-specific setup, troubleshooting, configuration options and others.
 
-   [wiki]: https://github.com/morhetz/gruvbox/wiki
+   [wiki]: https://github.com/gruvbox-community/gruvbox/wiki
 
 Features
 --------
@@ -91,7 +93,7 @@ Contributions
 
 See [gruvbox-contrib][] repo for contributions, ports and extras.
 
-[gruvbox-contrib]: https://github.com/morhetz/gruvbox-contrib
+[gruvbox-contrib]: https://github.com/gruvbox-community/gruvbox-contrib
 
 ToDo
 ----
@@ -103,7 +105,7 @@ Self-Promotion
 --------------
 
 If you like gruvbox follow the repository on
-[GitHub](https://github.com/morhetz/gruvbox) and vote for it on
+[GitHub](https://github.com/gruvbox-community/gruvbox) and vote for it on
 [vim.org](http://www.vim.org/scripts/script.php?script_id=4349).
 
 License
