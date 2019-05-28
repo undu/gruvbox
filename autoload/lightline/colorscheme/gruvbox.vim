@@ -2,7 +2,7 @@
 " File: gruvbox.vim
 " Description: Gruvbox colorscheme for Lightline (itchyny/lightline.vim)
 " Author: gmoe <me@griffinmoe.com>
-" Source: https://github.com/morhetz/gruvbox
+" Source: https://github.com/gruvbox-community/gruvbox
 " Last Modified: 20 Sep 2017
 " -----------------------------------------------------------------------------
 
