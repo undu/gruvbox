@@ -1472,6 +1472,19 @@ hi! link mailURL GruvBoxOrange
 hi! link mailEmail GruvBoxOrange
 
 " }}}
+" C#: {{{
+
+hi! link csBraces GruvboxFg1
+hi! link csEndColon GruvboxFg1
+hi! link csLogicSymbols GruvboxFg1
+hi! link csParens GruvboxFg3
+hi! link csOpSymbols GruvboxFg3
+hi! link csInterpolationDelimiter GruvboxFg3
+hi! link csInterpolationAlignDel GruvboxAquaBold
+hi! link csInterpolationFormat GruvboxAqua
+hi! link csInterpolationFormatDel GruvboxAquaBold
+
+" }}}
 
 
 " Functions -------------------------------------------------------------------
