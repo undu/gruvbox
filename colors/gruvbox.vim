@@ -630,7 +630,7 @@ hi! link Label GruvboxRed
 " try, catch, throw
 hi! link Exception GruvboxRed
 " sizeof, "+", "*", etc.
-hi! link Operator Normal
+hi! link Operator GruvboxFg1
 " Any other keyword
 hi! link Keyword GruvboxRed
 
