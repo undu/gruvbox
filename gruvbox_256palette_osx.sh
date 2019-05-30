@@ -1,6 +1,6 @@
 #!/bin/sh
 
-if [ "${TERM%%-*}" = "screen" ]; then
+if [ "${TERM%%-*}" = "screen" ] || [ "${TERM%%-*}" = "tmux" ]; then
   if [ -n "$TMUX" ]; then
     printf "\033Ptmux;\033\033]4;236;rgb:26/24/23\007\033\\"
     printf "\033Ptmux;\033\033]4;234;rgb:16/18/19\007\033\\"
