@@ -67,6 +67,8 @@ function! airline#themes#gruvbox#refresh()
     \ 'airline_tab':  s:N2,
     \ 'airline_tabsel':  s:N1,
     \ 'airline_tabtype':  s:V1,
+    \ 'airline_tablabel':  s:V1,
+    \ 'airline_tablabel_right':  s:V1,
     \ 'airline_tabfill':  s:TF,
     \ 'airline_tabhid':  s:IA,
     \ 'airline_tabmod':  s:I1
