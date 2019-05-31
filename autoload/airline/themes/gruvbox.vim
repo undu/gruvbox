@@ -56,6 +56,16 @@ function! airline#themes#gruvbox#refresh()
   let g:airline#themes#gruvbox#palette.visual.airline_error = g:airline#themes#gruvbox#palette.normal.airline_error
   let g:airline#themes#gruvbox#palette.visual_modified.airline_error = g:airline#themes#gruvbox#palette.normal_modified.airline_error
 
+  let s:C1 = airline#themes#get_highlight2(['GruvboxBg0', 'fg'], ['GruvboxGreen', 'fg'])
+  let s:C2 = s:I2
+  let s:C3 = s:I3
+  let g:airline#themes#gruvbox#palette.commandline = airline#themes#generate_color_map(s:C1, s:C2, s:C3)
+  let g:airline#themes#gruvbox#palette.commandline_modified = g:airline#themes#gruvbox#palette.normal_modified
+  let g:airline#themes#gruvbox#palette.commandline.airline_warning = g:airline#themes#gruvbox#palette.normal.airline_warning
+  let g:airline#themes#gruvbox#palette.commandline_modified.airline_warning = g:airline#themes#gruvbox#palette.normal_modified.airline_warning
+  let g:airline#themes#gruvbox#palette.commandline.airline_error = g:airline#themes#gruvbox#palette.normal.airline_error
+  let g:airline#themes#gruvbox#palette.commandline_modified.airline_error = g:airline#themes#gruvbox#palette.normal_modified.airline_error
+
   let s:IA = airline#themes#get_highlight2(['TabLine', 'fg'], ['CursorLine', 'bg'])
   let g:airline#themes#gruvbox#palette.inactive = airline#themes#generate_color_map(s:IA, s:IA, s:IA)
   let g:airline#themes#gruvbox#palette.inactive_modified = { 'airline_c': modified_group }
