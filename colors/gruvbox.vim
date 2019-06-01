@@ -167,7 +167,7 @@ call s:Color('faded_green',    ['#79740e', 100])     " 121-116-14
 call s:Color('faded_yellow',   ['#b57614', 136])     " 181-118-20
 call s:Color('faded_blue',     ['#076678', 24])      " 7-102-120
 call s:Color('faded_purple',   ['#8f3f71', 96])      " 143-63-113
-call s:Color('faded_aqua',     ['#427b58', 66])      " 66-123-88
+call s:Color('faded_aqua',     ['#427b58', 65])      " 66-123-88
 call s:Color('faded_orange',   ['#af3a03', 130])     " 175-58-3
 
 " }}}
