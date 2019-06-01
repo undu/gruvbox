@@ -80,56 +80,95 @@ endif
 let s:is_dark=(&background == 'dark')
 
 " }}}
+" Palette Utility Functions: {{{
+
+function! s:Color(name, default, ...)
+  " color already set, validate option
+  if has_key(s:gb, a:name)
+    let a:color = s:gb[a:name]
+
+    if type(a:color) == type('')
+      " gui color only
+      let s:gb[a:name] = a:default
+      let s:gb[a:name][0] = a:color
+      return 1
+    elseif type(a:color) == type(0)
+      " terminal color only
+      let s:gb[a:name] = a:default
+      let s:gb[a:name][1] = a:color
+      return 1
+    elseif type(a:color) == type([])
+          \ && len(a:color) == 2
+          \ && type(a:color[0]) == type('')
+          \ && type(a:color[1]) == type(0)
+      " gui and terminal color
+      return 1
+    else
+      " invalid value
+      echo a:name 'is invalid, usage: let g:gruvbox_colors.color = (["#ffffff", 255]|"#ffffff"|255)'
+      return 0
+    endif
+
+  endif
+
+  " set default option
+  let s:gb[a:name] = a:default
+  return 1
+endfunction
+
+" }}}
 " Palette: {{{
 
-" setup palette dictionary
-let s:gb = {}
+" get the global gruvbox palette options, if any
+let g:gruvbox_colors = get(g:, 'gruvbox_colors', {})
+" initialize the script palette
+let s:gb = copy(g:gruvbox_colors)
 
-" fill it with absolute colors
-let s:gb.dark0_hard  = ['#1d2021', 234]     " 29-32-33
-let s:gb.dark0       = ['#282828', 235]     " 40-40-40
-let s:gb.dark0_soft  = ['#32302f', 236]     " 50-48-47
-let s:gb.dark1       = ['#3c3836', 237]     " 60-56-54
-let s:gb.dark2       = ['#504945', 239]     " 80-73-69
-let s:gb.dark3       = ['#665c54', 241]     " 102-92-84
-let s:gb.dark4       = ['#7c6f64', 243]     " 124-111-100
-let s:gb.dark4_256   = ['#7c6f64', 243]     " 124-111-100
+" set palette default colors
+call s:Color('dark0_hard',  ['#1d2021', 234])     " 29-32-33
+call s:Color('dark0',       ['#282828', 235])     " 40-40-40
+call s:Color('dark0_soft',  ['#32302f', 236])     " 50-48-47
+call s:Color('dark1',       ['#3c3836', 237])     " 60-56-54
+call s:Color('dark2',       ['#504945', 239])     " 80-73-69
+call s:Color('dark3',       ['#665c54', 241])     " 102-92-84
+call s:Color('dark4',       ['#7c6f64', 243])     " 124-111-100
+call s:Color('dark4_256',   ['#7c6f64', 243])     " 124-111-100
 
-let s:gb.gray_245    = ['#928374', 245]     " 146-131-116
-let s:gb.gray_244    = ['#928374', 244]     " 146-131-116
+call s:Color('gray_245',    ['#928374', 245])     " 146-131-116
+call s:Color('gray_244',    ['#928374', 244])     " 146-131-116
 
-let s:gb.light0_hard = ['#f9f5d7', 230]     " 249-245-215
-let s:gb.light0      = ['#fbf1c7', 229]     " 253-244-193
-let s:gb.light0_soft = ['#f2e5bc', 228]     " 242-229-188
-let s:gb.light1      = ['#ebdbb2', 223]     " 235-219-178
-let s:gb.light2      = ['#d5c4a1', 250]     " 213-196-161
-let s:gb.light3      = ['#bdae93', 248]     " 189-174-147
-let s:gb.light4      = ['#a89984', 246]     " 168-153-132
-let s:gb.light4_256  = ['#a89984', 246]     " 168-153-132
+call s:Color('light0_hard', ['#f9f5d7', 230])     " 249-245-215
+call s:Color('light0',      ['#fbf1c7', 229])     " 253-244-193
+call s:Color('light0_soft', ['#f2e5bc', 228])     " 242-229-188
+call s:Color('light1',      ['#ebdbb2', 223])     " 235-219-178
+call s:Color('light2',      ['#d5c4a1', 250])     " 213-196-161
+call s:Color('light3',      ['#bdae93', 248])     " 189-174-147
+call s:Color('light4',      ['#a89984', 246])     " 168-153-132
+call s:Color('light4_256',  ['#a89984', 246])     " 168-153-132
 
-let s:gb.bright_red     = ['#fb4934', 167]     " 251-73-52
-let s:gb.bright_green   = ['#b8bb26', 142]     " 184-187-38
-let s:gb.bright_yellow  = ['#fabd2f', 214]     " 250-189-47
-let s:gb.bright_blue    = ['#83a598', 109]     " 131-165-152
-let s:gb.bright_purple  = ['#d3869b', 175]     " 211-134-155
-let s:gb.bright_aqua    = ['#8ec07c', 108]     " 142-192-124
-let s:gb.bright_orange  = ['#fe8019', 208]     " 254-128-25
+call s:Color('bright_red',     ['#fb4934', 167])     " 251-73-52
+call s:Color('bright_green',   ['#b8bb26', 142])     " 184-187-38
+call s:Color('bright_yellow',  ['#fabd2f', 214])     " 250-189-47
+call s:Color('bright_blue',    ['#83a598', 109])     " 131-165-152
+call s:Color('bright_purple',  ['#d3869b', 175])     " 211-134-155
+call s:Color('bright_aqua',    ['#8ec07c', 108])     " 142-192-124
+call s:Color('bright_orange',  ['#fe8019', 208])     " 254-128-25
 
-let s:gb.neutral_red    = ['#cc241d', 124]     " 204-36-29
-let s:gb.neutral_green  = ['#98971a', 106]     " 152-151-26
-let s:gb.neutral_yellow = ['#d79921', 172]     " 215-153-33
-let s:gb.neutral_blue   = ['#458588', 66]      " 69-133-136
-let s:gb.neutral_purple = ['#b16286', 132]     " 177-98-134
-let s:gb.neutral_aqua   = ['#689d6a', 72]      " 104-157-106
-let s:gb.neutral_orange = ['#d65d0e', 166]     " 214-93-14
+call s:Color('neutral_red',    ['#cc241d', 124])     " 204-36-29
+call s:Color('neutral_green',  ['#98971a', 106])     " 152-151-26
+call s:Color('neutral_yellow', ['#d79921', 172])     " 215-153-33
+call s:Color('neutral_blue',   ['#458588', 66])      " 69-133-136
+call s:Color('neutral_purple', ['#b16286', 132])     " 177-98-134
+call s:Color('neutral_aqua',   ['#689d6a', 72])      " 104-157-106
+call s:Color('neutral_orange', ['#d65d0e', 166])     " 214-93-14
 
-let s:gb.faded_red      = ['#9d0006', 88]      " 157-0-6
-let s:gb.faded_green    = ['#79740e', 100]     " 121-116-14
-let s:gb.faded_yellow   = ['#b57614', 136]     " 181-118-20
-let s:gb.faded_blue     = ['#076678', 24]      " 7-102-120
-let s:gb.faded_purple   = ['#8f3f71', 96]      " 143-63-113
-let s:gb.faded_aqua     = ['#427b58', 66]      " 66-123-88
-let s:gb.faded_orange   = ['#af3a03', 130]     " 175-58-3
+call s:Color('faded_red',      ['#9d0006', 88])      " 157-0-6
+call s:Color('faded_green',    ['#79740e', 100])     " 121-116-14
+call s:Color('faded_yellow',   ['#b57614', 136])     " 181-118-20
+call s:Color('faded_blue',     ['#076678', 24])      " 7-102-120
+call s:Color('faded_purple',   ['#8f3f71', 96])      " 143-63-113
+call s:Color('faded_aqua',     ['#427b58', 66])      " 66-123-88
+call s:Color('faded_orange',   ['#af3a03', 130])     " 175-58-3
 
 " }}}
 " Setup Emphasis: {{{
@@ -244,29 +283,29 @@ if g:gruvbox_termcolors == 16
 endif
 
 " save current relative colors back to palette dictionary
-let s:gb.bg0 = s:bg0
-let s:gb.bg1 = s:bg1
-let s:gb.bg2 = s:bg2
-let s:gb.bg3 = s:bg3
-let s:gb.bg4 = s:bg4
+call s:Color('bg0', s:bg0)
+call s:Color('bg1', s:bg1)
+call s:Color('bg2', s:bg2)
+call s:Color('bg3', s:bg3)
+call s:Color('bg4', s:bg4)
 
-let s:gb.gray = s:gray
+call s:Color('gray', s:gray)
 
-let s:gb.fg0 = s:fg0
-let s:gb.fg1 = s:fg1
-let s:gb.fg2 = s:fg2
-let s:gb.fg3 = s:fg3
-let s:gb.fg4 = s:fg4
+call s:Color('fg0', s:fg0)
+call s:Color('fg1', s:fg1)
+call s:Color('fg2', s:fg2)
+call s:Color('fg3', s:fg3)
+call s:Color('fg4', s:fg4)
 
-let s:gb.fg4_256 = s:fg4_256
+call s:Color('fg4_256', s:fg4_256)
 
-let s:gb.red    = s:red
-let s:gb.green  = s:green
-let s:gb.yellow = s:yellow
-let s:gb.blue   = s:blue
-let s:gb.purple = s:purple
-let s:gb.aqua   = s:aqua
-let s:gb.orange = s:orange
+call s:Color('red',    s:red)
+call s:Color('green',  s:green)
+call s:Color('yellow', s:yellow)
+call s:Color('blue',   s:blue)
+call s:Color('purple', s:purple)
+call s:Color('aqua',   s:aqua)
+call s:Color('orange', s:orange)
 
 " }}}
 " Setup Terminal Colors For Neovim: {{{
