@@ -71,7 +71,7 @@ Features
 
 * Lots of style-customization options (contrast, color invertion, italics usage etc.)
 * Extended filetype highlighting: Html, Xml, Vim, Clojure, C, Python, JavaScript, TypeScript, PureScript, CoffeeScript, Ruby, Objective-C, Go, Lua, MoonScript, Java, Markdown, Haskell, Elixir, C#
-* Supported plugins: [EasyMotion][], [vim-sneak][], [Indent Guides][], [indentLine][], [Rainbow Parentheses][], [Airline][], [Lightline][], [GitGutter][], [Signify][], [ShowMarks][], [Signature][], [Syntastic][], [Ale][], [CtrlP][], [Startify][], [NERDTree][], [Dirvish][]
+* Supported plugins: [EasyMotion][], [vim-sneak][], [Indent Guides][], [indentLine][], [Rainbow Parentheses][], [Airline][], [Lightline][], [GitGutter][], [Signify][], [ShowMarks][], [Signature][], [Syntastic][], [Ale][], [CtrlP][], [fzf][], [Startify][], [NERDTree][], [Dirvish][]
 
    [EasyMotion]: https://github.com/Lokaltog/vim-easymotion
    [vim-sneak]: https://github.com/justinmk/vim-sneak
@@ -87,6 +87,7 @@ Features
    [Syntastic]: https://github.com/scrooloose/syntastic
    [Ale]: https://github.com/w0rp/ale
    [CtrlP]: https://github.com/kien/ctrlp.vim
+   [fzf]: https://github.com/junegunn/fzf.vim
    [Startify]: https://github.com/mhinz/vim-startify
    [NERDTree]: https://github.com/scrooloose/nerdtree
    [Dirvish]: https://github.com/justinmk/vim-dirvish

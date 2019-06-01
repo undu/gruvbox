@@ -884,6 +884,24 @@ call s:HL('CtrlPMode2', s:bg0, s:blue, s:bold)
 call s:HL('CtrlPStats', s:fg4, s:bg2, s:bold)
 
 " }}}
+" FZF: {{{
+
+let g:fzf_colors = {
+      \ 'fg':      ['fg', 'GruvboxFg1'],
+      \ 'bg':      ['fg', 'GruvboxBg0'],
+      \ 'hl':      ['fg', 'GruvboxYellow'],
+      \ 'fg+':     ['fg', 'GruvboxFg1'],
+      \ 'bg+':     ['fg', 'GruvboxBg1'],
+      \ 'hl+':     ['fg', 'GruvboxYellow'],
+      \ 'info':    ['fg', 'GruvboxBlue'],
+      \ 'prompt':  ['fg', 'GruvboxFg4'],
+      \ 'pointer': ['fg', 'GruvboxBlue'],
+      \ 'marker':  ['fg', 'GruvboxOrange'],
+      \ 'spinner': ['fg', 'GruvboxYellow'],
+      \ 'header':  ['fg', 'GruvboxBg3']
+      \ }
+
+" }}}
 " Startify: {{{
 
 hi! link StartifyBracket GruvboxFg3
