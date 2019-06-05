@@ -546,7 +546,15 @@ call s:HL('Normal', s:fg1, s:bg0)
 " Correct background (see issue #7):
 " --- Problem with changing between dark and light on 256 color terminal
 " --- https://github.com/morhetz/gruvbox/issues/7
-if v:vim_did_enter
+if exists('v:vim_did_enter')
+  let g:vim_did_enter = v:vim_did_enter
+else
+  augroup GruvboxVimEnter
+    au!
+    autocmd VimEnter * let g:vim_did_enter = true
+  augroup End
+endif
+if get(g:, 'vim_did_enter', 0)
   if s:is_dark
     set background=dark
   else
