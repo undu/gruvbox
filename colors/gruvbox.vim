@@ -1041,8 +1041,8 @@ call s:HL('htmlItalic', s:vim_fg, s:vim_bg, s:italic)
 " }}}
 " Xml: {{{
 
-hi! link xmlTag GruvboxBlue
-hi! link xmlEndTag GruvboxBlue
+hi! link xmlTag GruvboxAquaBold
+hi! link xmlEndTag GruvboxAquaBold
 hi! link xmlTagName GruvboxBlue
 hi! link xmlEqual GruvboxBlue
 hi! link docbkKeyword GruvboxAquaBold
@@ -1054,14 +1054,14 @@ hi! link xmlCdataCdata GruvboxPurple
 hi! link dtdFunction GruvboxGray
 hi! link dtdTagName GruvboxPurple
 
-hi! link xmlAttrib GruvboxAqua
+hi! link xmlAttrib GruvboxOrange
 hi! link xmlProcessingDelim GruvboxGray
 hi! link dtdParamEntityPunct GruvboxGray
 hi! link dtdParamEntityDPunct GruvboxGray
 hi! link xmlAttribPunct GruvboxGray
 
-hi! link xmlEntity GruvboxOrange
-hi! link xmlEntityPunct GruvboxOrange
+hi! link xmlEntity GruvboxRed
+hi! link xmlEntityPunct GruvboxRed
 " }}}
 " Vim: {{{
 
