@@ -1285,7 +1285,7 @@ hi! link typeScriptReserved GruvboxAqua
 hi! link typeScriptLabel GruvboxAqua
 hi! link typeScriptFuncKeyword GruvboxAqua
 hi! link typeScriptIdentifier GruvboxOrange
-hi! link typeScriptBraces GruvboxFg1
+" hi! link typeScriptBraces GruvboxFg1
 hi! link typeScriptEndColons GruvboxFg1
 hi! link typeScriptDOMObjects GruvboxFg1
 hi! link typeScriptAjaxMethods GruvboxFg1
