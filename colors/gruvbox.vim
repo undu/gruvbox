@@ -1281,24 +1281,24 @@ hi! link jsClassDefinition GruvboxYellow
 " }}}
 " TypeScript: {{{
 
-hi! link typeScriptReserved GruvboxAqua
-hi! link typeScriptLabel GruvboxAqua
-hi! link typeScriptFuncKeyword GruvboxAqua
-hi! link typeScriptIdentifier GruvboxOrange
-hi! link typeScriptBraces GruvboxFg1
-hi! link typeScriptEndColons GruvboxFg1
-hi! link typeScriptDOMObjects GruvboxFg1
-hi! link typeScriptAjaxMethods GruvboxFg1
-hi! link typeScriptLogicSymbols GruvboxFg1
-hi! link typeScriptDocSeeTag Comment
-hi! link typeScriptDocParam Comment
-hi! link typeScriptDocTags vimCommentTitle
-hi! link typeScriptGlobalObjects GruvboxFg1
-hi! link typeScriptParens GruvboxFg3
-hi! link typeScriptOpSymbols GruvboxFg3
-hi! link typeScriptHtmlElemProperties GruvboxFg1
-hi! link typeScriptNull GruvboxPurple
-hi! link typeScriptInterpolationDelimiter GruvboxAqua
+hi! link typescriptReserved GruvboxAqua
+hi! link typescriptLabel GruvboxAqua
+hi! link typescriptFuncKeyword GruvboxAqua
+hi! link typescriptIdentifier GruvboxOrange
+hi! link typescriptBraces GruvboxFg1
+hi! link typescriptEndColons GruvboxFg1
+hi! link typescriptDOMObjects GruvboxFg1
+hi! link typescriptAjaxMethods GruvboxFg1
+hi! link typescriptLogicSymbols GruvboxFg1
+hi! link typescriptDocSeeTag Comment
+hi! link typescriptDocParam Comment
+hi! link typescriptDocTags vimCommentTitle
+hi! link typescriptGlobalObjects GruvboxFg1
+hi! link typescriptParens GruvboxFg3
+hi! link typescriptOpSymbols GruvboxFg3
+hi! link typescriptHtmlElemProperties GruvboxFg1
+hi! link typescriptNull GruvboxPurple
+hi! link typescriptInterpolationDelimiter GruvboxAqua
 
 " }}}
 " JSX: maxmellon/vim-jsx-pretty: {{{
