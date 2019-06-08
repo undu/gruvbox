@@ -1043,7 +1043,7 @@ call s:HL('htmlItalic', s:vim_fg, s:vim_bg, s:italic)
 
 hi! link xmlTag GruvboxAquaBold
 hi! link xmlEndTag GruvboxAquaBold
-hi! link xmlTagName GruvboxBlue
+hi! link xmlTagName GruvboxAquaBold
 hi! link xmlEqual GruvboxBlue
 hi! link docbkKeyword GruvboxAquaBold
 
