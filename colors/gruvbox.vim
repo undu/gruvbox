@@ -911,6 +911,10 @@ let g:fzf_colors = {
       \ 'header':  ['fg', 'GruvboxBg3']
       \ }
 
+call s:HL('Fzf1', s:blue, s:bg1)
+call s:HL('Fzf2', s:orange, s:bg1)
+call s:HL('Fzf3', s:fg4, s:bg1)
+
 " }}}
 " Startify: {{{
 
