@@ -591,7 +591,7 @@ if version >= 703
 endif
 
 hi! link NonText GruvboxBg2
-hi! link SpecialKey GruvboxBg2
+hi! link SpecialKey GruvboxFg4
 
 call s:HL('Visual',    s:none,  s:bg3, s:invert_selection)
 hi! link VisualNOS Visual
