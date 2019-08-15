@@ -85,22 +85,22 @@ let s:is_dark=(&background == 'dark')
 function! s:Color(name, default, ...)
   " color already set, validate option
   if has_key(s:gb, a:name)
-    let a:color = s:gb[a:name]
+    let l:color = s:gb[a:name]
 
-    if type(a:color) == type('')
+    if type(l:color) == type('')
       " gui color only
       let s:gb[a:name] = a:default
-      let s:gb[a:name][0] = a:color
+      let s:gb[a:name][0] = l:color
       return 1
-    elseif type(a:color) == type(0)
+    elseif type(l:color) == type(0)
       " terminal color only
       let s:gb[a:name] = a:default
-      let s:gb[a:name][1] = a:color
+      let s:gb[a:name][1] = l:color
       return 1
-    elseif type(a:color) == type([])
-          \ && len(a:color) == 2
-          \ && type(a:color[0]) == type('')
-          \ && type(a:color[1]) == type(0)
+    elseif type(l:color) == type([])
+          \ && len(l:color) == 2
+          \ && type(l:color[0]) == type('')
+          \ && type(l:color[1]) == type(0)
       " gui and terminal color
       return 1
     else
