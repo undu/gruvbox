@@ -3,7 +3,6 @@
 " Description: Retro groove color scheme for Vim
 " Author: morhetz <morhetz@gmail.com>
 " Source: https://github.com/gruvbox-community/gruvbox
-" Last Modified: 12 Aug 2017
 " -----------------------------------------------------------------------------
 
 " Supporting code -------------------------------------------------------------
@@ -123,6 +122,7 @@ endfunction
 let g:gruvbox_colors = get(g:, 'gruvbox_colors', {})
 " initialize the script palette
 let s:gb = copy(g:gruvbox_colors)
+let g:current_gruvbox_colors = s:gb
 
 " set palette default colors
 call s:Color('dark0_hard',  ['#1d2021', 234])     " 29-32-33

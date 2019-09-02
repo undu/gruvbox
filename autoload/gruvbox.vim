@@ -3,7 +3,6 @@
 " Description: Retro groove color scheme for Vim
 " Author: morhetz <morhetz@gmail.com>
 " Source: https://github.com/gruvbox-community/gruvbox
-" Last Modified: 09 Apr 2014
 " -----------------------------------------------------------------------------
 
 function! gruvbox#invert_signs_toggle()

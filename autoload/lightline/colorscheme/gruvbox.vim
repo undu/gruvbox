@@ -3,7 +3,6 @@
 " Description: Gruvbox colorscheme for Lightline (itchyny/lightline.vim)
 " Author: gmoe <me@griffinmoe.com>
 " Source: https://github.com/gruvbox-community/gruvbox
-" Last Modified: 20 Sep 2017
 " -----------------------------------------------------------------------------
 
 function! s:getGruvColor(group)
