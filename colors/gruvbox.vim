@@ -957,6 +957,10 @@ hi! link ALEErrorSign GruvboxRedSign
 hi! link ALEWarningSign GruvboxYellowSign
 hi! link ALEInfoSign GruvboxBlueSign
 
+hi! link ALEVirtualTextError GruvboxRed
+hi! link ALEVirtualTextWarning GruvboxYellow
+hi! link ALEVirtualTextInfo GruvboxBlue
+
 " }}}
 " Dirvish: {{{
 
