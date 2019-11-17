@@ -962,6 +962,24 @@ hi! link ALEVirtualTextWarning GruvboxYellow
 hi! link ALEVirtualTextInfo GruvboxBlue
 
 " }}}
+" Coc: {{{
+
+hi! link CocErrorSign GruvboxRedSign
+hi! link CocWarningSign GruvboxYellowSign
+hi! link CocInfoSign GruvboxBlueSign
+hi! link CocHintSign GruvboxAquaSign
+
+hi! link CocErrorVirtualText GruvboxRed
+hi! link CocWarningVirtualText GruvboxYellow
+hi! link CocInfoVirtualText GruvboxBlue
+hi! link CocHintVirtualText GruvboxAqua
+
+hi! link CocErrorFloat GruvboxRed
+hi! link CocWarningFloat GruvboxYellow
+hi! link CocInfoFloat GruvboxBlue
+hi! link CocHintFloat GruvboxAqua
+
+" }}}
 " Dirvish: {{{
 
 hi! link DirvishPathTail GruvboxAqua
