@@ -979,6 +979,8 @@ hi! link CocWarningFloat GruvboxYellow
 hi! link CocInfoFloat GruvboxBlue
 hi! link CocHintFloat GruvboxAqua
 
+call s:HL('CocHighlightText', s:none, s:gb.bg2)
+
 " }}}
 " Dirvish: {{{
 
