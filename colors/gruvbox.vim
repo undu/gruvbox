@@ -772,6 +772,29 @@ if has("spell")
 endif
 
 " }}}
+" LSP: {{{
+
+hi! link LspDiagnosticsError GruvboxRed
+hi! link LspDiagnosticsErrorSign GruvboxRedSign
+hi! link LspDiagnosticsErrorFloating GruvboxRed
+hi! link LspDiagnosticsUnderlineError GruvboxRedUnderline
+
+hi! link LspDiagnosticsWarning GruvboxYellow
+hi! link LspDiagnosticsWarningSign GruvboxYellowSign
+hi! link LspDiagnosticsWarningFloating GruvboxYellow
+hi! link LspDiagnosticsUnderlineWarning GruvboxYellowUnderline
+
+hi! link LspDiagnosticsInformation GruvboxBlue
+hi! link LspDiagnosticsInformationSign GruvboxBlueSign
+hi! link LspDiagnosticsInformationFloating GruvboxBlue
+hi! link LspDiagnosticsUnderlineInformation GruvboxBlueUnderline
+
+hi! link LspDiagnosticsHint GruvboxAqua
+hi! link LspDiagnosticsHintSign GruvboxAquaSign
+hi! link LspDiagnosticsHintFloating GruvboxAqua
+hi! link LspDiagnosticsUnderlineHint GruvboxAquaUnderline
+
+" }}}
 
 " Plugin specific -------------------------------------------------------------
 " EasyMotion: {{{
