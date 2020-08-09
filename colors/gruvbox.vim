@@ -1013,24 +1013,24 @@ call s:HL('multiple_cursors_visual', s:none, s:gb.bg2)
 
 hi! link CocErrorSign GruvboxRedSign
 hi! link CocWarningSign GruvboxOrangeSign
-hi! link CocInfoSign GruvboxYellowSign
-hi! link CocHintSign GruvboxBlueSign
+hi! link CocInfoSign GruvboxBlueSign
+hi! link CocHintSign GruvboxAquaSign
 hi! link CocErrorFloat GruvboxRed
 hi! link CocWarningFloat GruvboxOrange
-hi! link CocInfoFloat GruvboxYellow
-hi! link CocHintFloat GruvboxBlue
+hi! link CocInfoFloat GruvboxBlue
+hi! link CocHintFloat GruvboxAqua
 hi! link CocDiagnosticsError GruvboxRed
 hi! link CocDiagnosticsWarning GruvboxOrange
-hi! link CocDiagnosticsInfo GruvboxYellow
-hi! link CocDiagnosticsHint GruvboxBlue
+hi! link CocDiagnosticsInfo GruvboxBlue
+hi! link CocDiagnosticsHint GruvboxAqua
 
 hi! link CocSelectedText GruvboxRed
 hi! link CocCodeLens GruvboxGray
 
 hi! link CocErrorHighlight GruvboxRedUnderline
 hi! link CocWarningHighlight GruvboxOrangeUnderline
-hi! link CocInfoHighlight GruvboxYellowUnderline
-hi! link CocHintHighlight GruvboxBlueUnderline
+hi! link CocInfoHighlight GruvboxBlueUnderline
+hi! link CocHintHighlight GruvboxAquaUnderline
 
 " }}}
 
