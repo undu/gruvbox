@@ -24,6 +24,7 @@ if exists('g:lightline')
   let s:blue   = s:getGruvColor('GruvboxBlue')
   let s:aqua   = s:getGruvColor('GruvboxAqua')
   let s:orange = s:getGruvColor('GruvboxOrange')
+  let s:red = s:getGruvColor('GruvboxRed')
   let s:green = s:getGruvColor('GruvboxGreen')
 
   let s:p = {'normal':{}, 'inactive':{}, 'insert':{}, 'replace':{}, 'visual':{}, 'tabline':{}, 'terminal':{}}
@@ -49,7 +50,7 @@ if exists('g:lightline')
   let s:p.tabline.tabsel = [ [ s:bg0, s:fg4 ] ]
   let s:p.tabline.middle = [ [ s:bg0, s:bg4 ] ]
   let s:p.tabline.right = [ [ s:bg0, s:orange ] ]
-  let s:p.normal.error = [ [ s:bg0, s:orange ] ]
+  let s:p.normal.error = [ [ s:bg0, s:red ] ]
   let s:p.normal.warning = [ [ s:bg0, s:yellow ] ]
 
   let g:lightline#colorscheme#gruvbox#palette = lightline#colorscheme#flatten(s:p)
