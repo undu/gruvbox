@@ -529,6 +529,14 @@ call s:HL('GruvboxPurpleSign', s:gb.purple, s:sign_column, s:invert_signs)
 call s:HL('GruvboxAquaSign', s:gb.aqua, s:sign_column, s:invert_signs)
 call s:HL('GruvboxOrangeSign', s:gb.orange, s:sign_column, s:invert_signs)
 
+call s:HL('GruvboxRedUnderline', s:none, s:none, s:undercurl, s:gb.red)
+call s:HL('GruvboxGreenUnderline', s:none, s:none, s:undercurl, s:gb.green)
+call s:HL('GruvboxYellowUnderline', s:none, s:none, s:undercurl, s:gb.yellow)
+call s:HL('GruvboxBlueUnderline', s:none, s:none, s:undercurl, s:gb.blue)
+call s:HL('GruvboxPurpleUnderline', s:none, s:none, s:undercurl, s:gb.purple)
+call s:HL('GruvboxAquaUnderline', s:none, s:none, s:undercurl, s:gb.aqua)
+call s:HL('GruvboxOrangeUnderline', s:none, s:none, s:undercurl, s:gb.orange)
+
 " }}}
 
 " Vanilla colorscheme ---------------------------------------------------------
@@ -751,17 +759,40 @@ call s:HL('DiffText',   s:gb.yellow, s:gb.bg0, s:inverse)
 if has("spell")
   " Not capitalised word, or compile warnings
   if g:gruvbox_improved_warnings == 0
-    call s:HL('SpellCap',   s:none, s:none, s:undercurl, s:gb.blue)
+    hi! link SpellCap GruvboxBlueUnderline
   else
     call s:HL('SpellCap',   s:gb.green, s:none, s:bold . s:italic)
   endif
   " Not recognized word
-  call s:HL('SpellBad',   s:none, s:none, s:undercurl, s:gb.red)
+  hi! link SpellBad GruvboxRedUnderline
   " Wrong spelling for selected region
-  call s:HL('SpellLocal', s:none, s:none, s:undercurl, s:gb.aqua)
+  hi! link SpellLocal GruvboxAquaUnderline
   " Rare word
-  call s:HL('SpellRare',  s:none, s:none, s:undercurl, s:gb.purple)
+  hi! link SpellRare GruvboxPurpleUnderline
 endif
+
+" }}}
+" LSP: {{{
+
+hi! link LspDiagnosticsError GruvboxRed
+hi! link LspDiagnosticsErrorSign GruvboxRedSign
+hi! link LspDiagnosticsErrorFloating GruvboxRed
+hi! link LspDiagnosticsUnderlineError GruvboxRedUnderline
+
+hi! link LspDiagnosticsWarning GruvboxYellow
+hi! link LspDiagnosticsWarningSign GruvboxYellowSign
+hi! link LspDiagnosticsWarningFloating GruvboxYellow
+hi! link LspDiagnosticsUnderlineWarning GruvboxYellowUnderline
+
+hi! link LspDiagnosticsInformation GruvboxBlue
+hi! link LspDiagnosticsInformationSign GruvboxBlueSign
+hi! link LspDiagnosticsInformationFloating GruvboxBlue
+hi! link LspDiagnosticsUnderlineInformation GruvboxBlueUnderline
+
+hi! link LspDiagnosticsHint GruvboxAqua
+hi! link LspDiagnosticsHintSign GruvboxAquaSign
+hi! link LspDiagnosticsHintFloating GruvboxAqua
+hi! link LspDiagnosticsUnderlineHint GruvboxAquaUnderline
 
 " }}}
 
@@ -855,8 +886,8 @@ hi! link SignifySignDelete GruvboxRedSign
 " }}}
 " Syntastic: {{{
 
-call s:HL('SyntasticError', s:none, s:none, s:undercurl, s:gb.red)
-call s:HL('SyntasticWarning', s:none, s:none, s:undercurl, s:gb.yellow)
+hi! link SyntasticError GruvboxRedUnderline
+hi! link SyntasticWarning GruvboxYellowUnderline
 
 hi! link SyntasticErrorSign GruvboxRedSign
 hi! link SyntasticWarningSign GruvboxYellowSign
@@ -943,9 +974,9 @@ call s:HL('BufTabLineFill', s:gb.bg0, s:gb.bg0)
 " }}}
 " Asynchronous Lint Engine: {{{
 
-call s:HL('ALEError', s:none, s:none, s:undercurl, s:gb.red)
-call s:HL('ALEWarning', s:none, s:none, s:undercurl, s:gb.yellow)
-call s:HL('ALEInfo', s:none, s:none, s:undercurl, s:gb.blue)
+hi! link ALEError GruvboxRedUnderline
+hi! link ALEWarning GruvboxYellowUnderline
+hi! link ALEInfo GruvboxBlueUnderline
 
 hi! link ALEErrorSign GruvboxRedSign
 hi! link ALEWarningSign GruvboxYellowSign
@@ -1005,24 +1036,24 @@ call s:HL('multiple_cursors_visual', s:none, s:gb.bg2)
 
 hi! link CocErrorSign GruvboxRedSign
 hi! link CocWarningSign GruvboxOrangeSign
-hi! link CocInfoSign GruvboxYellowSign
-hi! link CocHintSign GruvboxBlueSign
+hi! link CocInfoSign GruvboxBlueSign
+hi! link CocHintSign GruvboxAquaSign
 hi! link CocErrorFloat GruvboxRed
 hi! link CocWarningFloat GruvboxOrange
-hi! link CocInfoFloat GruvboxYellow
-hi! link CocHintFloat GruvboxBlue
+hi! link CocInfoFloat GruvboxBlue
+hi! link CocHintFloat GruvboxAqua
 hi! link CocDiagnosticsError GruvboxRed
 hi! link CocDiagnosticsWarning GruvboxOrange
-hi! link CocDiagnosticsInfo GruvboxYellow
-hi! link CocDiagnosticsHint GruvboxBlue
+hi! link CocDiagnosticsInfo GruvboxBlue
+hi! link CocDiagnosticsHint GruvboxAqua
 
 hi! link CocSelectedText GruvboxRed
 hi! link CocCodeLens GruvboxGray
 
-call s:HL('CocErrorHighlight', s:none, s:none, s:undercurl, s:red)
-call s:HL('CocWarningHighlight', s:none, s:none, s:undercurl, s:orange)
-call s:HL('CocInfoHighlight', s:none, s:none, s:undercurl, s:yellow)
-call s:HL('CocHintHighlight', s:none, s:none, s:undercurl, s:blue)
+hi! link CocErrorHighlight GruvboxRedUnderline
+hi! link CocWarningHighlight GruvboxOrangeUnderline
+hi! link CocInfoHighlight GruvboxBlueUnderline
+hi! link CocHintHighlight GruvboxAquaUnderline
 
 " }}}
 
