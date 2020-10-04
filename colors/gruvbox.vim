@@ -1622,6 +1622,15 @@ hi! link rustCommentLineDoc Comment
 hi! link rustDefault GruvboxAqua
 
 " }}}
+" Ocaml: {{{
+
+hi! link ocamlOperator GruvboxFg1
+hi! link ocamlKeyChar GruvboxOrange
+hi! link ocamlArrow GruvboxOrange
+hi! link ocamlInfixOpKeyword GruvboxRed
+hi! link ocamlConstructor GruvboxOrange
+
+" }}}
 
 
 " Functions -------------------------------------------------------------------
