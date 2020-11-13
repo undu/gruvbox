@@ -774,24 +774,20 @@ endif
 " }}}
 " LSP: {{{
 
-hi! link LspDiagnosticsError GruvboxRed
-hi! link LspDiagnosticsErrorSign GruvboxRedSign
-hi! link LspDiagnosticsErrorFloating GruvboxRed
+hi! link LspDiagnosticsDefaultError GruvboxRed
+hi! link LspDiagnosticsSignError GruvboxRedSign
 hi! link LspDiagnosticsUnderlineError GruvboxRedUnderline
 
-hi! link LspDiagnosticsWarning GruvboxYellow
-hi! link LspDiagnosticsWarningSign GruvboxYellowSign
-hi! link LspDiagnosticsWarningFloating GruvboxYellow
+hi! link LspDiagnosticsDefaultWarning GruvboxYellow
+hi! link LspDiagnosticsSignWarning GruvboxYellowSign
 hi! link LspDiagnosticsUnderlineWarning GruvboxYellowUnderline
 
-hi! link LspDiagnosticsInformation GruvboxBlue
-hi! link LspDiagnosticsInformationSign GruvboxBlueSign
-hi! link LspDiagnosticsInformationFloating GruvboxBlue
+hi! link LspDiagnosticsDefaultInformation GruvboxBlue
+hi! link LspDiagnosticsSignInformation GruvboxBlueSign
 hi! link LspDiagnosticsUnderlineInformation GruvboxBlueUnderline
 
-hi! link LspDiagnosticsHint GruvboxAqua
-hi! link LspDiagnosticsHintSign GruvboxAquaSign
-hi! link LspDiagnosticsHintFloating GruvboxAqua
+hi! link LspDiagnosticsDefaultHint GruvboxAqua
+hi! link LspDiagnosticsSignHint GruvboxAquaSign
 hi! link LspDiagnosticsUnderlineHint GruvboxAquaUnderline
 
 " }}}
