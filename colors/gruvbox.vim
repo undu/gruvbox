@@ -601,7 +601,7 @@ hi! link VisualNOS Visual
 call s:HL('Search', s:hls_highlight, s:gb.bg0, s:inverse)
 call s:HL('IncSearch', s:hls_cursor, s:gb.bg0, s:inverse)
 
-call s:HL('QuickFixLine', s:gb.bg0, s:gb.yellow, s:bold) 
+call s:HL('QuickFixLine', s:gb.bg0, s:gb.yellow, s:bold)
 
 call s:HL('Underlined', s:gb.blue, s:none, s:underline)
 
@@ -667,8 +667,8 @@ else
 endif
 
 call s:HL('Comment', s:gb.gray, s:none, s:italicize_comments)
-call s:HL('Todo', s:vim_fg, s:vim_bg, s:bold . s:italic)
-call s:HL('Error', s:gb.red, s:vim_bg, s:bold . s:inverse)
+call s:HL('Todo', s:vim_fg, s:none, s:bold . s:italic)
+call s:HL('Error', s:gb.red, s:none, s:bold . s:inverse)
 
 " Generic statement
 hi! link Statement GruvboxRed
@@ -1533,7 +1533,7 @@ hi! link haskellAssocType GruvboxAqua
 
 hi! link haskellNumber GruvboxAqua
 hi! link haskellPragma GruvboxRedBold
- 
+
 hi! link haskellTH GruvboxAquaBold
 hi! link haskellForeignKeywords GruvboxGreen
 hi! link haskellKeyword GruvboxRed
@@ -1567,7 +1567,7 @@ hi! link mailHeaderKey GruvBoxBlue
 hi! link mailHeaderEmail GruvBoxBlue
 hi! link mailSubject GruvboxBlue
 
-" mail quoted text 
+" mail quoted text
 hi! link mailQuoted1 GruvBoxAqua
 hi! link mailQuoted2 GruvBoxPurple
 hi! link mailQuoted3 GruvBoxYellow
@@ -1585,10 +1585,10 @@ hi! link mailQuotedExp6 GruvBoxOrange
 " I did not discover yet for what this is used
 " hi! link mailVerbatim GruvBoxRed
 
-" mail signature 
-hi! link mailSignature GruvBoxFg 
+" mail signature
+hi! link mailSignature GruvBoxFg
 
-" mail url and emails 
+" mail url and emails
 hi! link mailURL GruvBoxOrange
 hi! link mailEmail GruvBoxOrange
 
