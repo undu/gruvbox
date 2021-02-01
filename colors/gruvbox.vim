@@ -1575,13 +1575,6 @@ hi! link mailQuoted4 GruvBoxGreen
 hi! link mailQuoted5 GruvBoxRed
 hi! link mailQuoted6 GruvBoxOrange
 
-hi! link mailQuotedExp1 GruvBoxAqua
-hi! link mailQuotedExp2 GruvBoxPurple
-hi! link mailQuotedExp3 GruvBoxYellow
-hi! link mailQuotedExp4 GruvBoxGreen
-hi! link mailQuotedExp5 GruvBoxRed
-hi! link mailQuotedExp6 GruvBoxOrange
-
 " I did not discover yet for what this is used
 " hi! link mailVerbatim GruvBoxRed
 
