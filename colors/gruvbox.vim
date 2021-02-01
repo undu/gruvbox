@@ -1561,12 +1561,7 @@ hi! link jsonString GruvboxFg1
 " }}}
 " Mail: {{{
 
-" mail header
-hi! link mailHeader GruvBoxBlue
-hi! link mailHeaderKey GruvBoxBlue
-hi! link mailHeaderEmail GruvBoxBlue
-hi! link mailSubject GruvboxBlue
-
+" Override some defaults defined by mail.vim
 " mail quoted text
 hi! link mailQuoted1 GruvBoxAqua
 hi! link mailQuoted2 GruvBoxPurple
@@ -1575,15 +1570,7 @@ hi! link mailQuoted4 GruvBoxGreen
 hi! link mailQuoted5 GruvBoxRed
 hi! link mailQuoted6 GruvBoxOrange
 
-" I did not discover yet for what this is used
-" hi! link mailVerbatim GruvBoxRed
-
-" mail signature
-hi! link mailSignature GruvBoxFg
-
-" mail url and emails
-hi! link mailURL GruvBoxOrange
-hi! link mailEmail GruvBoxOrange
+hi! link mailSignature Comment
 
 " }}}
 " C#: {{{
