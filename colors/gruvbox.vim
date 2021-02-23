@@ -1550,7 +1550,7 @@ hi! link haskellQuote GruvboxGreenBold
 hi! link haskellShebang GruvboxYellowBold
 hi! link haskellLiquid GruvboxPurpleBold
 hi! link haskellQuasiQuoted GruvboxBlueBold
-hi! link haskellRecursiveDo GruvboxPurlpe
+hi! link haskellRecursiveDo GruvboxPurple
 hi! link haskellQuotedType GruvboxRed
 hi! link haskellPreProc GruvboxFg4
 hi! link haskellTypeRoles GruvboxRedBold
