@@ -795,8 +795,10 @@ hi! link LspDiagnosticsUnderlineHint GruvboxAquaUnderline
 " Plugin specific -------------------------------------------------------------
 " EasyMotion: {{{
 
-hi! link EasyMotionTarget GruvboxYellowBold
-hi! link EasyMotionShade Comment
+hi! link EasyMotionTarget GruvboxRedBold
+hi! link EasyMotionTarget2First GruvboxYellowBold
+hi! link EasyMotionTarget2Second GruvboxOrangeBold
+hi! link EasyMotionShade GruvboxGray
 
 " }}}
 " Sneak: {{{
