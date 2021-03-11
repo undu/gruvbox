@@ -1061,6 +1061,20 @@ hi! link CocInfoHighlight GruvboxBlueUnderline
 hi! link CocHintHighlight GruvboxAquaUnderline
 
 " }}}
+" Telescope.nvim: {{{
+hi! link TelescopeNormal GruvboxFg1
+hi! link TelescopeSelection GruvboxOrangeBold
+hi! link TelescopeSlectionCaret GruvboxRed
+hi! link TelescopeMultiSelection GruvboxGray
+hi! link TelescopeBorder TelescopeNormal
+hi! link TelescopePromptBorder TelescopeNormal
+hi! link TelescopeResultsBorder TelescopeNormal
+hi! link TelescopePreviewBorder TelescopeNormal
+hi! link TelescopeMatching GruvboxBlue
+hi! link TelescopePromptPrefix GruvboxRed
+hi! link TelescopePrompt TelescopeNormal
+
+" }}}
 
 " Filetype specific -----------------------------------------------------------
 " Diff: {{{
