@@ -882,6 +882,11 @@ hi! link SignifySignChange GruvboxAquaSign
 hi! link SignifySignDelete GruvboxRedSign
 
 " }}}
+" gitsigns.nvim {{{
+hi! link GitSignsAdd GruvboxGreenSign
+hi! link GitSignsChange GruvboxAquaSign
+hi! link GitSignsDelete GruvboxRedSign
+" }}}
 " Syntastic: {{{
 
 hi! link SyntasticError GruvboxRedUnderline
