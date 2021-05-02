@@ -1102,7 +1102,6 @@ hi! link htmlEndTag GruvboxAquaBold
 hi! link htmlTagName GruvboxBlue
 hi! link htmlArg GruvboxOrange
 
-hi! link htmlScriptTag GruvboxPurple
 hi! link htmlTagN GruvboxFg1
 hi! link htmlSpecialTagName GruvboxBlue
 
