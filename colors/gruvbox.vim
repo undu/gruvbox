@@ -790,6 +790,10 @@ hi! link LspDiagnosticsDefaultHint GruvboxAqua
 hi! link LspDiagnosticsSignHint GruvboxAquaSign
 hi! link LspDiagnosticsUnderlineHint GruvboxAquaUnderline
 
+hi! link LspReferenceText GruvboxYellowBold
+hi! link LspReferenceRead GruvboxYellowBold
+hi! link LspReferenceWrite GruvboxOrangeBold
+
 " }}}
 
 " Plugin specific -------------------------------------------------------------
