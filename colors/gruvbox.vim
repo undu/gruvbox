@@ -794,6 +794,8 @@ hi! link LspReferenceText GruvboxYellowBold
 hi! link LspReferenceRead GruvboxYellowBold
 hi! link LspReferenceWrite GruvboxOrangeBold
 
+hi! link LspCodeLens GruvboxGray
+
 " }}}
 
 " Plugin specific -------------------------------------------------------------
