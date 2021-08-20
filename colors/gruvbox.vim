@@ -672,7 +672,7 @@ call s:HL('Error', s:gb.red, s:none, s:bold . s:inverse)
 
 " Generic statement
 hi! link Statement GruvboxRed
-" if, then, else, endif, swicth, etc.
+" if, then, else, endif, switch, etc.
 hi! link Conditional GruvboxRed
 " for, do, while, etc.
 hi! link Repeat GruvboxRed
