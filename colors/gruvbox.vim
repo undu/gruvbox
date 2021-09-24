@@ -796,6 +796,23 @@ hi! link LspReferenceWrite GruvboxOrangeBold
 
 hi! link LspCodeLens GruvboxGray
 
+" Backward Compatibilty prior to (https://github.com/neovim/neovim/pull/15585)
+hi! link LspDiagnosticsDefaultError GruvboxRed
+hi! link LspDiagnosticsSignError GruvboxRedSign
+hi! link LspDiagnosticsUnderlineError GruvboxRedUnderline
+
+hi! link LspDiagnosticsDefaultWarning GruvboxYellow
+hi! link LspDiagnosticsSignWarning GruvboxYellowSign
+hi! link LspDiagnosticsUnderlineWarning GruvboxYellowUnderline
+
+hi! link LspDiagnosticsDefaultInformation GruvboxBlue
+hi! link LspDiagnosticsSignInformation GruvboxBlueSign
+hi! link LspDiagnosticsUnderlineInformation GruvboxBlueUnderline
+
+hi! link LspDiagnosticsDefaultHint GruvboxAqua
+hi! link LspDiagnosticsSignHint GruvboxAquaSign
+hi! link LspDiagnosticsUnderlineHint GruvboxAquaUnderline
+
 " }}}
 
 " Plugin specific -------------------------------------------------------------
