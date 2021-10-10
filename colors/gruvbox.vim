@@ -774,6 +774,29 @@ endif
 " }}}
 " LSP: {{{
 
+hi! link DiagnosticError GruvboxRed
+hi! link DiagnosticSignError GruvboxRedSign
+hi! link DiagnosticUnderlineError GruvboxRedUnderline
+
+hi! link DiagnosticWarn GruvboxYellow
+hi! link DiagnosticSignWarn GruvboxYellowSign
+hi! link DiagnosticUnderlineWarn GruvboxYellowUnderline
+
+hi! link DiagnosticInfo GruvboxBlue
+hi! link DiagnosticSignInfo GruvboxBlueSign
+hi! link DiagnosticUnderlineInfo GruvboxBlueUnderline
+
+hi! link DiagnosticHint GruvboxAqua
+hi! link DiagnosticSignHint GruvboxAquaSign
+hi! link DiagnosticUnderlineHint GruvboxAquaUnderline
+
+hi! link LspReferenceText GruvboxYellowBold
+hi! link LspReferenceRead GruvboxYellowBold
+hi! link LspReferenceWrite GruvboxOrangeBold
+
+hi! link LspCodeLens GruvboxGray
+
+" Backward Compatibilty prior to (https://github.com/neovim/neovim/pull/15585)
 hi! link LspDiagnosticsDefaultError GruvboxRed
 hi! link LspDiagnosticsSignError GruvboxRedSign
 hi! link LspDiagnosticsUnderlineError GruvboxRedUnderline
@@ -789,12 +812,6 @@ hi! link LspDiagnosticsUnderlineInformation GruvboxBlueUnderline
 hi! link LspDiagnosticsDefaultHint GruvboxAqua
 hi! link LspDiagnosticsSignHint GruvboxAquaSign
 hi! link LspDiagnosticsUnderlineHint GruvboxAquaUnderline
-
-hi! link LspReferenceText GruvboxYellowBold
-hi! link LspReferenceRead GruvboxYellowBold
-hi! link LspReferenceWrite GruvboxOrangeBold
-
-hi! link LspCodeLens GruvboxGray
 
 " }}}
 
