@@ -815,6 +815,11 @@ hi! link LspDiagnosticsUnderlineHint GruvboxAquaUnderline
 
 " }}}
 
+" Treesitter: {{{
+hi! link TSKeywordOperator GruvboxRed
+
+" }}}
+
 " Plugin specific -------------------------------------------------------------
 " EasyMotion: {{{
 
