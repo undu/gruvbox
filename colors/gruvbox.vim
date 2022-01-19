@@ -441,6 +441,13 @@ if exists('g:gruvbox_italicize_strings')
   endif
 endif
 
+let s:italicize_operators = ''
+if exists('g:gruvbox_italicize_operators')
+  if g:gruvbox_italicize_operators == 1
+    let s:italicize_operators = s:italic
+  endif
+endif
+
 " }}}
 " Highlighting Function: {{{
 
@@ -681,7 +688,7 @@ hi! link Label GruvboxRed
 " try, catch, throw
 hi! link Exception GruvboxRed
 " sizeof, "+", "*", etc.
-hi! link Operator GruvboxFg1
+call s:HL('Operator',  s:gb.orange, s:none, s:italicize_operators)
 " Any other keyword
 hi! link Keyword GruvboxRed
 
