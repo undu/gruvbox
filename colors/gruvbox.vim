@@ -1452,6 +1452,7 @@ hi! link coffeeBracket GruvboxOrange
 
 hi! link rubyStringDelimiter GruvboxGreen
 hi! link rubyInterpolationDelimiter GruvboxAqua
+hi! link rubyDefinedOperator rubyKeyword
 
 " }}}
 " ObjectiveC: {{{
