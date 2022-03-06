@@ -170,6 +170,10 @@ call s:Color('faded_purple',   ['#8f3f71', 96])      " 143-63-113
 call s:Color('faded_aqua',     ['#427b58', 65])      " 66-123-88
 call s:Color('faded_orange',   ['#af3a03', 130])     " 175-58-3
 
+call s:Color('none', ['NONE','NONE'])
+call s:Color('NONE', ['NONE','NONE'])
+call s:Color('None', ['NONE','NONE'])
+
 " }}}
 " Setup Emphasis: {{{
 
@@ -386,7 +390,6 @@ if exists('g:gruvbox_number_column')
 endif
 
 let s:sign_column = s:gb.bg1
-
 if exists('g:gruvbox_sign_column')
   let s:sign_column = get(s:gb, g:gruvbox_sign_column)
 endif
