@@ -1118,6 +1118,31 @@ hi! link TelescopePromptPrefix GruvboxRed
 hi! link TelescopePrompt TelescopeNormal
 
 " }}}
+" nvim-cmp: {{{
+hi! link CmpItemAbbr GruvboxFg0
+hi! link CmpItemAbbrDeprecated GruvboxFg1
+hi! link CmpItemAbbrMatch GruvboxBlueBold
+hi! link CmpItemAbbrMatchFuzzy GruvboxBlueUnderline
+hi! link CmpItemMenu GruvboxGray
+hi! link CmpItemKindText GruvboxOrange
+hi! link CmpItemKindMethod GruvboxBlue
+hi! link CmpItemKindFunction GruvboxBlue
+hi! link CmpItemKindConstructor GruvboxYellow
+hi! link CmpItemKindField GruvboxBlue
+hi! link CmpItemKindClass GruvboxYellow
+hi! link CmpItemKindInterface GruvboxYellow
+hi! link CmpItemKindModule GruvboxBlue
+hi! link CmpItemKindProperty GruvboxBlue
+hi! link CmpItemKindValue GruvboxOrange
+hi! link CmpItemKindEnum GruvboxYellow
+hi! link CmpItemKindKeyword GruvboxPurple
+hi! link CmpItemKindSnippet GruvboxGreen
+hi! link CmpItemKindFile GruvboxBlue
+hi! link CmpItemKindEnumMember GruvBoxAqua
+hi! link CmpItemKindConstant GruvboxOrange
+hi! link CmpItemKindStruct GruvboxYellow
+hi! link CmpItemKindTypeParameter GruvboxYellow
+"}}}
 
 " Filetype specific -----------------------------------------------------------
 " Diff: {{{
