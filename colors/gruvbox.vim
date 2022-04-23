@@ -828,7 +828,16 @@ endif
 " }}}
 
 " Treesitter: {{{
-hi! link TSKeywordOperator GruvboxRed
+
+if has('nvim')
+  hi! link TSKeywordOperator GruvboxRed
+  " () [] {}
+  hi! link TSPunctBracket GruvboxFg1
+  " , ; .
+  hi! link TSPunctDelimiter GruvboxFg1
+  " Namespaces
+  hi! link TSNamespace GruvboxBlue
+endif
 
 " }}}
 
