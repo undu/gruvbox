@@ -830,13 +830,9 @@ endif
 " Treesitter: {{{
 
 if has('nvim')
+  " Highlight TSKeywordOperator as keywords
+  " https://github.com/nvim-treesitter/nvim-treesitter/issues/447
   hi! link TSKeywordOperator GruvboxRed
-  " () [] {}
-  hi! link TSPunctBracket GruvboxFg1
-  " , ; .
-  hi! link TSPunctDelimiter GruvboxFg1
-  " Namespaces
-  hi! link TSNamespace GruvboxBlue
 endif
 
 " }}}
