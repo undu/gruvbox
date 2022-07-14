@@ -1114,7 +1114,7 @@ hi! link CocHintHighlight GruvboxAquaUnderline
 " Telescope.nvim: {{{
 hi! link TelescopeNormal GruvboxFg1
 hi! link TelescopeSelection GruvboxOrangeBold
-hi! link TelescopeSlectionCaret GruvboxRed
+hi! link TelescopeSelectionCaret GruvboxRed
 hi! link TelescopeMultiSelection GruvboxGray
 hi! link TelescopeBorder TelescopeNormal
 hi! link TelescopePromptBorder TelescopeNormal
