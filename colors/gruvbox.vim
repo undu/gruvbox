@@ -1150,7 +1150,13 @@ hi! link CmpItemKindConstant GruvboxOrange
 hi! link CmpItemKindStruct GruvboxYellow
 hi! link CmpItemKindTypeParameter GruvboxYellow
 "}}}
-
+" Dashboard: {{{
+hi! link DashboardHeader GruvboxYellowBold
+hi! link DashboardCenter GruvboxGreen
+hi! link DashboardCenterIcon GruvboxAqua
+hi! link DashboardShortCut GruvboxBlue
+hi! link DashboardFooter GruvboxPurple
+" }}}
 " Filetype specific -----------------------------------------------------------
 " Diff: {{{
 
