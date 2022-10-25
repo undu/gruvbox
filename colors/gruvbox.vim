@@ -521,6 +521,7 @@ call s:HL('GruvboxBg2', s:gb.bg2)
 call s:HL('GruvboxBg3', s:gb.bg3)
 call s:HL('GruvboxBg4', s:gb.bg4)
 
+call s:HL('GruvboxWhite', s:gb.fg1)
 call s:HL('GruvboxRed', s:gb.red)
 call s:HL('GruvboxRedBold', s:gb.red, s:none, s:bold)
 call s:HL('GruvboxGreen', s:gb.green)
@@ -557,7 +558,7 @@ call s:HL('GruvboxOrangeUnderline', s:none, s:none, s:undercurl, s:gb.orange)
 " Vanilla colorscheme ---------------------------------------------------------
 " General UI: {{{
 
-" Normal text
+" Normal text, can't be used directly because of background cannot be overriden 
 call s:HL('Normal', s:gb.fg1, s:gb.bg0)
 
 " Correct background (see issue #7):
@@ -837,7 +838,63 @@ endif
 if has('nvim')
   " Highlight TSKeywordOperator as keywords
   " https://github.com/nvim-treesitter/nvim-treesitter/issues/447
-  hi! link TSKeywordOperator GruvboxRed
+  hi! link TSKeywordOperator Keyword
+
+  hi! link @comment Comment
+  hi! link @error Error
+  hi! link @none NONE
+  hi! link @preproc PreProc
+  hi! link @define Define
+  hi! link @operator Operator
+
+  hi! link @punctuation.special Special
+
+  hi! link @string String
+
+  hi! link @character Character
+
+  hi! link @boolean Boolean
+  hi! link @number Number
+  hi! link @float Float
+
+  hi! link @keyword.operator Operator
+
+  hi! link @function Function
+  hi! link @function.macro Macro
+
+  hi! link @keyword Keyword
+
+  hi! link @conditional Conditional
+  hi! link @repeat Repeat
+  hi! link @debug Debug
+  hi! link @Label Label
+  hi! link @include Include
+  hi! link @exception Exception
+
+  hi! link @type Type
+
+  hi! link @storageclass StorageClass
+
+  hi! link @variable GruvboxWhite
+
+  hi! link @constant Constant
+
+  hi! link @text GruvboxWhite
+  hi! link @text.strong Bold
+  hi! link @text.emphasis Bold
+  hi! link @text.underline Underlined
+  hi! link @text.strike Strikethrough
+  hi! link @text.title Title
+  hi! link @text.literal String
+  hi! link @text.uri Underlined
+  hi! link @text.math Special
+
+  hi! link @text.todo Todo
+  hi! link @text.note SpecialComment
+  hi! link @text.danger Error
+
+  hi! link @tag Tag
+  hi! link @tag.delimiter Delimiter
 endif
 
 " }}}
