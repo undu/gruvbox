@@ -1109,6 +1109,7 @@ hi! link CocDiagnosticsHint GruvboxAqua
 
 hi! link CocSelectedText GruvboxRed
 hi! link CocCodeLens GruvboxGray
+hi! link CocSearch GruvboxAqua
 
 hi! link CocErrorHighlight GruvboxRedUnderline
 hi! link CocWarningHighlight GruvboxOrangeUnderline
