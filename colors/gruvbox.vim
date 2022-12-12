@@ -700,6 +700,9 @@ hi! link Exception GruvboxRed
 call s:HL('Operator',  s:gb.orange, s:none, s:italicize_operators)
 " Any other keyword
 hi! link Keyword GruvboxRed
+" separators
+"hi! link Delimiter GruvboxOrange
+"hi! link Bracket GruvboxFg3
 
 " Variable name
 hi! link Identifier GruvboxBlue
@@ -847,11 +850,17 @@ if has('nvim')
   hi! link @define Define
   hi! link @operator Operator
 
+  "hi! link @punctuation.delimiter Delimiter
+  "hi! link @punctuation.bracket Bracket
   hi! link @punctuation.special Special
 
   hi! link @string String
+  "hi! link @string.regex String
+  "hi! link @string.escape Constant
+  "hi! link @string.special Special
 
   hi! link @character Character
+  "hi! link @character.special Special
 
   hi! link @boolean Boolean
   hi! link @number Number
@@ -860,9 +869,20 @@ if has('nvim')
   hi! link @keyword.operator Operator
 
   hi! link @function Function
+  "hi! link @function.builtin Special
+  "hi! link @function.call Function
   hi! link @function.macro Macro
 
+  "hi! link @method Function
+  "hi! link @method.call Function
+
+  "hi! link @constructor Special
+  "hi! link @parameter Identifier
+
   hi! link @keyword Keyword
+  "hi! link @keyword.function Keyword
+  "hi! link @keyword.operator Keyword
+  "hi! link @keyword.return Keyword
 
   hi! link @conditional Conditional
   hi! link @repeat Repeat
@@ -872,12 +892,24 @@ if has('nvim')
   hi! link @exception Exception
 
   hi! link @type Type
+  "hi! link @type.builtin Type
+  "hi! link @type.qualifier Type
+  "hi! link @type.definition TypeDef
 
   hi! link @storageclass StorageClass
+  "hi! link @attribute PreProc
+  "hi! link @field Identifier
+  "hi! link @property Identifier
 
   hi! link @variable GruvboxWhite
+  "hi! link @variable.builtin Special
 
   hi! link @constant Constant
+  "hi! link @constant.builtin Type
+  "hi! link @constant.macro Define
+
+  "hi! link @namespace Include
+  "hi! link @symbol Identifier
 
   hi! link @text GruvboxWhite
   hi! link @text.strong Bold
@@ -888,12 +920,17 @@ if has('nvim')
   hi! link @text.literal String
   hi! link @text.uri Underlined
   hi! link @text.math Special
+  "hi! link @text.environment Macro
+  "hi! link @text.environment.name Type
+  "hi! link @text.reference Constant
 
   hi! link @text.todo Todo
   hi! link @text.note SpecialComment
   hi! link @text.danger Error
+  "hi! link @text.warning WarningMsg
 
   hi! link @tag Tag
+  "hi! link @tag.attribute Identifier
   hi! link @tag.delimiter Delimiter
 endif
 
