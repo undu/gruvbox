@@ -892,12 +892,12 @@ if has('nvim')
   hi! link @type.definition Typedef
 
   hi! link @storageclass StorageClass
-  "hi! link @attribute PreProc
+  hi! link @attribute PreProc
   hi! link @field Identifier
   hi! link @property Identifier
 
   hi! link @variable GruvboxFg1
-  "hi! link @variable.builtin Special
+  hi! link @variable.builtin Special
 
   hi! link @constant Constant
   "hi! link @constant.builtin Special
