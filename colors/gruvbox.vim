@@ -699,6 +699,9 @@ hi! link Exception GruvboxRed
 call s:HL('Operator',  s:gb.orange, s:none, s:italicize_operators)
 " Any other keyword
 hi! link Keyword GruvboxRed
+" separators
+hi! link Delimiter GruvboxOrange
+hi! link Bracket GruvboxFg3
 
 " Variable name
 hi! link Identifier GruvboxBlue
@@ -835,9 +838,93 @@ endif
 " Treesitter: {{{
 
 if has('nvim')
-  " Highlight TSKeywordOperator as keywords
-  " https://github.com/nvim-treesitter/nvim-treesitter/issues/447
-  hi! link TSKeywordOperator GruvboxRed
+  hi! link @comment Comment
+  hi! link @error Error
+  hi! link @none NONE
+  hi! link @preproc PreProc
+  hi! link @define Define
+  hi! link @operator Operator
+
+  hi! link @punctuation.delimiter Delimiter
+  hi! link @punctuation.bracket Bracket
+  hi! link @punctuation.special Special
+
+  hi! link @string String
+  "hi! link @string.regex String
+  hi! link @string.escape Special
+  "hi! link @string.special Special
+
+  hi! link @character Character
+  hi! link @character.special Special
+
+  hi! link @boolean Boolean
+  hi! link @number Number
+  hi! link @float Float
+
+  hi! link @function Function
+  "hi! link @function.builtin Special
+  "hi! link @function.call Special
+  hi! link @function.macro Macro
+
+  hi! link @method Function
+  hi! link @method.call Function
+
+  hi! link @constructor Function
+  hi! link @parameter Identifier
+
+  hi! link @keyword Keyword
+  "hi! link @keyword.function Function
+  "hi! link @keyword.operator Operator
+  "hi! link @keyword.return Special
+
+  hi! link @conditional Conditional
+  hi! link @repeat Repeat
+  hi! link @debug Debug
+  hi! link @Label Label
+  hi! link @include Include
+  hi! link @exception Exception
+
+  hi! link @type Type
+  "hi! link @type.builtin Type
+  "hi! link @type.qualifier Type
+  hi! link @type.definition Typedef
+
+  hi! link @storageclass StorageClass
+  "hi! link @attribute PreProc
+  hi! link @field Identifier
+  hi! link @property Identifier
+
+  hi! link @variable GruvboxFg1
+  "hi! link @variable.builtin Special
+
+  hi! link @constant Constant
+  "hi! link @constant.builtin Special
+  hi! link @constant.macro Macro
+
+  hi! link @namespace Include
+  "hi! link @symbol Identifier
+
+  hi! link @text GruvboxFg1
+  hi! link @text.strong Bold
+  hi! link @text.emphasis Bold
+  hi! link @text.underline Underlined
+  hi! link @text.strike Strikethrough
+  hi! link @text.title Title
+  hi! link @text.literal String
+  hi! link @text.uri Underlined
+  hi! link @text.math Special
+  hi! link @text.environment PreProc
+  hi! link @text.environment.name Delimiter
+  hi! link @text.reference Constant
+
+  hi! link @text.todo Todo
+  hi! link @text.note SpecialComment
+  hi! link @text.danger Error
+  hi! link @text.warning WarningMsg
+
+  hi! link @tag Tag
+  hi! link @tag.attribute Identifier
+  hi! link @tag.delimiter Delimiter
 endif
 
 " }}}
