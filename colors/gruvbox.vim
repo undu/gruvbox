@@ -1023,7 +1023,7 @@ hi! link SignifySignDelete GruvboxRedSign
 " }}}
 " gitsigns.nvim {{{
 hi! link GitSignsAdd GruvboxGreenSign
-hi! link GitSignsChange GruvboxAquaSign
+hi! link GitSignsChange GruvboxOrangeSign
 hi! link GitSignsDelete GruvboxRedSign
 " }}}
 " Syntastic: {{{
