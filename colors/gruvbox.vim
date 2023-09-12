@@ -1,3 +1,5 @@
+scriptencoding utf-8
+
 " -----------------------------------------------------------------------------
 " File: gruvbox.vim
 " Description: Retro groove color scheme for Vim
@@ -8,9 +10,9 @@
 " Supporting code -------------------------------------------------------------
 " Initialisation: {{{
 
-if version > 580
+if v:version > 580
   hi clear
-  if exists("syntax_on")
+  if exists('syntax_on')
     syntax reset
   endif
 endif
@@ -28,7 +30,7 @@ if !exists('g:gruvbox_bold')
   let g:gruvbox_bold=1
 endif
 if !exists('g:gruvbox_italic')
-  if has('gui_running') || $TERM_ITALICS == 'true'
+  if has('gui_running') || $TERM_ITALICS ==# 'true'
     let g:gruvbox_italic=1
   else
     let g:gruvbox_italic=0
@@ -76,7 +78,7 @@ if !exists('g:gruvbox_contrast_light')
   let g:gruvbox_contrast_light='medium'
 endif
 
-let s:is_dark=(&background == 'dark')
+let s:is_dark=(&background ==# 'dark')
 
 " }}}
 " Palette Utility Functions: {{{
@@ -212,9 +214,9 @@ let s:none = ['NONE', 'NONE']
 " determine relative colors
 if s:is_dark
   let s:bg0  = s:gb.dark0
-  if g:gruvbox_contrast_dark == 'soft'
+  if g:gruvbox_contrast_dark ==# 'soft'
     let s:bg0  = s:gb.dark0_soft
-  elseif g:gruvbox_contrast_dark == 'hard'
+  elseif g:gruvbox_contrast_dark ==# 'hard'
     let s:bg0  = s:gb.dark0_hard
   endif
 
@@ -242,9 +244,9 @@ if s:is_dark
   let s:orange = s:gb.bright_orange
 else
   let s:bg0  = s:gb.light0
-  if g:gruvbox_contrast_light == 'soft'
+  if g:gruvbox_contrast_light ==# 'soft'
     let s:bg0  = s:gb.light0_soft
-  elseif g:gruvbox_contrast_light == 'hard'
+  elseif g:gruvbox_contrast_light ==# 'hard'
     let s:bg0  = s:gb.light0_hard
   endif
 
@@ -481,12 +483,12 @@ function! s:HL(group, fg, ...)
 
   " special fallback
   if a:0 >= 3
-    if g:gruvbox_guisp_fallback != 'NONE'
+    if g:gruvbox_guisp_fallback !=# 'NONE'
       let fg = a:3
     endif
 
     " bg fallback mode should invert higlighting
-    if g:gruvbox_guisp_fallback == 'bg'
+    if g:gruvbox_guisp_fallback ==# 'bg'
       let emstr .= 'inverse,'
     endif
   endif
@@ -579,7 +581,7 @@ if get(g:, 'gruvbox_vim_did_enter', 0)
   endif
 endif
 
-if version >= 700
+if v:version >= 700
   " Screen line that the cursor is
   call s:HL('CursorLine', s:none, s:cursorline)
   " Screen column that the cursor is
@@ -596,7 +598,7 @@ if version >= 700
   call s:HL('MatchParen', s:none, s:gb.bg3, s:bold)
 endif
 
-if version >= 703
+if v:version >= 703
   " Highlighted screen columns
   call s:HL('ColorColumn',  s:none, s:color_column)
 
@@ -748,7 +750,7 @@ hi! link Typedef GruvboxYellow
 " }}}
 " Completion Menu: {{{
 
-if version >= 700
+if v:version >= 700
   " Popup menu: normal item
   call s:HL('Pmenu', s:gb.fg1, s:gb.bg2)
   " Popup menu: selected item
@@ -774,7 +776,7 @@ call s:HL('DiffText',   s:gb.yellow, s:gb.bg0, s:inverse)
 " }}}
 " Spelling: {{{
 
-if has("spell")
+if has('spell')
   " Not capitalised word, or compile warnings
   if g:gruvbox_improved_warnings == 0
     hi! link SpellCap GruvboxBlueUnderline
@@ -792,7 +794,7 @@ endif
 " }}}
 " LSP: {{{
 
-if has("nvim")
+if has('nvim')
   hi! link DiagnosticError GruvboxRed
   hi! link DiagnosticSignError GruvboxRedSign
   hi! link DiagnosticUnderlineError GruvboxRedUnderline
