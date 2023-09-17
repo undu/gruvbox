@@ -906,7 +906,7 @@ if has('nvim-0.7')
   hi! link @namespace Include
   "hi! link @symbol Identifier
 
-  hi! link @text GruvboxFg1
+  hi! link @text Normal
   hi! link @text.strong Bold
   hi! link @text.emphasis Bold
   hi! link @text.underline Underlined
