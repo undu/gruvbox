@@ -896,7 +896,7 @@ if has('nvim') && exists('*luaeval') && luaeval('vim.treesitter ~= nil')
   hi! link @field Identifier
   hi! link @property Identifier
 
-  hi! link @variable GruvboxFg1
+  hi! link @variable Identifier
   hi! link @variable.builtin Special
 
   hi! link @constant Constant
