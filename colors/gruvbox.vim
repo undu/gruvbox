@@ -839,7 +839,7 @@ endif
 
 " Treesitter: {{{
 
-if has('nvim') && exists('*luaeval') && luaeval('vim.treesitter ~= nil')
+if has('nvim-0.7')
   hi! link @comment Comment
   hi! link @error Error
   hi! link @none NONE
