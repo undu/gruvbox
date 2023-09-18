@@ -845,6 +845,13 @@ if has('nvim')
   hi! link LspDiagnosticsUnderlineHint GruvboxAquaUnderline
 endif
 
+" LSP highlighting
+if has('nvim-0.7')
+  hi! link @lsp.type.member Function
+  hi! link @lsp.type.property Field
+  hi! link @lsp.typemod.variable.defaultLibrary @variable.builtin
+endif
+
 " }}}
 " Treesitter: {{{
 
@@ -880,8 +887,6 @@ if has('nvim-0.7')
 
   hi! link @method Function
   hi! link @method.call Function
-  " Fix LSPs overwriting method colors
-  hi! link @lsp.type.member Function
 
   hi! link @constructor Function
   hi! link @parameter Identifier
@@ -910,13 +915,9 @@ if has('nvim-0.7')
   hi! link @attribute PreProc
   hi! link @field Field
   hi! link @property Field
-  " Fix LSPs overwriting property colors
-  hi! link @lsp.type.property Field
 
   hi! link @variable Identifier
   hi! link @variable.builtin Special
-  " Fix LSPs overwriting builtin variable colors
-  hi! link @lsp.typemod.variable.defaultLibrary @variable.builtin
 
   hi! link @constant Constant
   "hi! link @constant.builtin Special
