@@ -938,6 +938,11 @@ endif
 " }}}
 
 " Plugin specific -------------------------------------------------------------
+" Fugitive: {{{
+
+hi! link fugitiveHash GruvboxBlue
+
+" }}}
 " EasyMotion: {{{
 
 hi! link EasyMotionTarget GruvboxRedBold
