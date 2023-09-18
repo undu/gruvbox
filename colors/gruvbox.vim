@@ -836,7 +836,6 @@ if has('nvim')
 endif
 
 " }}}
-
 " Treesitter: {{{
 
 if has('nvim-0.7')
@@ -1022,9 +1021,11 @@ hi! link SignifySignDelete GruvboxRedSign
 
 " }}}
 " gitsigns.nvim {{{
+
 hi! link GitSignsAdd GruvboxGreenSign
 hi! link GitSignsChange GruvboxOrangeSign
 hi! link GitSignsDelete GruvboxRedSign
+
 " }}}
 " Syntastic: {{{
 
@@ -1041,8 +1042,8 @@ call s:HL('debugPC', s:none, s:gb.faded_blue)
 hi! link debugBreakpoint GruvboxRedSign
 
 " }}}
-
 " Signature: {{{
+
 hi! link SignatureMarkText   GruvboxBlueSign
 hi! link SignatureMarkerText GruvboxPurpleSign
 
@@ -1207,6 +1208,7 @@ hi! link CocHintHighlight GruvboxAquaUnderline
 
 " }}}
 " Telescope.nvim: {{{
+
 hi! link TelescopeNormal GruvboxFg1
 hi! link TelescopeSelection GruvboxOrangeBold
 hi! link TelescopeSelectionCaret GruvboxRed
@@ -1221,6 +1223,7 @@ hi! link TelescopePrompt TelescopeNormal
 
 " }}}
 " nvim-cmp: {{{
+
 hi! link CmpItemAbbr GruvboxFg0
 hi! link CmpItemAbbrDeprecated GruvboxFg1
 hi! link CmpItemAbbrMatch GruvboxBlueBold
@@ -1246,12 +1249,15 @@ hi! link CmpItemKindStruct GruvboxYellow
 hi! link CmpItemKindTypeParameter GruvboxYellow
 "}}}
 " Dashboard: {{{
+
 hi! link DashboardHeader GruvboxYellowBold
 hi! link DashboardCenter GruvboxGreen
 hi! link DashboardCenterIcon GruvboxAqua
 hi! link DashboardShortCut GruvboxBlue
 hi! link DashboardFooter GruvboxPurple
+
 " }}}
+
 " Filetype specific -----------------------------------------------------------
 " Diff: {{{
 
@@ -1313,6 +1319,7 @@ hi! link xmlAttribPunct GruvboxGray
 
 hi! link xmlEntity GruvboxRed
 hi! link xmlEntityPunct GruvboxRed
+
 " }}}
 " Vim: {{{
 
@@ -1808,7 +1815,6 @@ hi! link ocamlInfixOpKeyword GruvboxRed
 hi! link ocamlConstructor GruvboxOrange
 
 " }}}
-
 
 " Functions -------------------------------------------------------------------
 " Search Highlighting Cursor {{{
