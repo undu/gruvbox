@@ -1366,6 +1366,21 @@ call s:HL('htmlUnderlineItalic', s:vim_fg, s:vim_bg, s:underline . s:italic)
 call s:HL('htmlItalic', s:vim_fg, s:vim_bg, s:italic)
 
 " }}}
+" Java: {{{
+
+hi! link javaParen Bracket
+hi! link javaParen1 javaParen
+hi! link javaParen2 javaParen
+hi! link javaParen3 javaParen
+hi! link javaParen4 javaParen
+hi! link javaParen5 javaParen
+
+hi! link javaDocTags Keyword
+hi! link javaDocParam Type
+
+hi! link javaOperator Operator
+
+" }}}
 " Javascript: {{{
 
 hi! link javaScriptBraces Bracket
@@ -1619,22 +1634,6 @@ hi! link javascriptSymbolStaticProp javascriptProp
 hi! link javascriptTypedArrayStaticProp javascriptProp
 hi! link javascriptURLUtilsProp javascriptProp
 hi! link javascriptXHRProp javascriptProp
-
-" }}}
-" Java: {{{
-
-hi! link javaAnnotation GruvboxBlue
-hi! link javaDocTags GruvboxAqua
-hi! link javaCommentTitle vimCommentTitle
-hi! link javaParen GruvboxFg3
-hi! link javaParen1 GruvboxFg3
-hi! link javaParen2 GruvboxFg3
-hi! link javaParen3 GruvboxFg3
-hi! link javaParen4 GruvboxFg3
-hi! link javaParen5 GruvboxFg3
-hi! link javaOperator GruvboxOrange
-
-hi! link javaVarArg GruvboxGreen
 
 " }}}
 " Elixir: {{{
