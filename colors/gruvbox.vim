@@ -1403,6 +1403,13 @@ hi! link luaStringLongTag Special
 hi! link luaTable Bracket
 
 " }}}
+" MoonScript: {{{
+
+hi! link moonFunction Punctuation
+hi! link moonLuaFunc Function
+hi! link moonObjAssign Field
+
+" }}}
 " ObjectiveC: {{{
 
 hi! link objcDirective Keyword
@@ -1612,14 +1619,6 @@ hi! link javascriptSymbolStaticProp javascriptProp
 hi! link javascriptTypedArrayStaticProp javascriptProp
 hi! link javascriptURLUtilsProp javascriptProp
 hi! link javascriptXHRProp javascriptProp
-
-" }}}
-" MoonScript: {{{
-
-hi! link moonSpecialOp GruvboxFg3
-hi! link moonExtendedOp GruvboxFg3
-hi! link moonFunction GruvboxFg3
-hi! link moonObject GruvboxYellow
 
 " }}}
 " Java: {{{
