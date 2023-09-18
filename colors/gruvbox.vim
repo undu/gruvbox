@@ -712,6 +712,8 @@ hi! link Keyword GruvboxRed
 
 " Variable name
 hi! link Identifier GruvboxFg1
+" Field names
+hi! link Field GruvboxAqua
 " Function name
 hi! link Function GruvboxGreenBold
 
@@ -899,7 +901,7 @@ if has('nvim-0.7')
 
   hi! link @storageclass StorageClass
   hi! link @attribute PreProc
-  hi! link @field Identifier
+  hi! link @field Field
   hi! link @property Identifier
 
   hi! link @variable Identifier
