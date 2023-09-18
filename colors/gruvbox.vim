@@ -742,9 +742,9 @@ hi! link Float GruvboxPurple
 " Generic type
 hi! link Type GruvboxYellow
 " static, register, volatile, etc
-hi! link StorageClass GruvboxOrange
+hi! link StorageClass GruvboxYellow
 " struct, union, enum, etc.
-hi! link Structure GruvboxAqua
+hi! link Structure GruvboxYellow
 " typedef
 hi! link Typedef GruvboxYellow
 
