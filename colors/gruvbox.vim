@@ -1267,6 +1267,7 @@ hi! link CmpItemKindEnumMember GruvBoxAqua
 hi! link CmpItemKindConstant GruvboxOrange
 hi! link CmpItemKindStruct GruvboxYellow
 hi! link CmpItemKindTypeParameter GruvboxYellow
+
 "}}}
 " Dashboard: {{{
 
