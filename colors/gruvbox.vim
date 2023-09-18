@@ -880,6 +880,8 @@ if has('nvim-0.7')
 
   hi! link @method Function
   hi! link @method.call Function
+  " Fix LSPs overwriting method colors
+  hi! link @lsp.type.member Function
 
   hi! link @constructor Function
   hi! link @parameter Identifier
@@ -908,6 +910,8 @@ if has('nvim-0.7')
   hi! link @attribute PreProc
   hi! link @field Field
   hi! link @property Field
+  " Fix LSPs overwriting property colors
+  hi! link @lsp.type.property Field
 
   hi! link @variable Identifier
   hi! link @variable.builtin Special
