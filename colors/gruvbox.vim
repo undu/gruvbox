@@ -677,14 +677,18 @@ hi! link lCursor Cursor
 " }}}
 " Syntax Highlighting: {{{
 
+" Special characters and variables
 if g:gruvbox_improved_strings == 0
   hi! link Special GruvboxOrange
 else
   call s:HL('Special', s:gb.orange, s:gb.bg1, s:italicize_strings)
 endif
 
+" Default comment color
 call s:HL('Comment', s:gb.gray, s:none, s:italicize_comments)
+" Comment message "TODO" keywords
 call s:HL('Todo', s:vim_fg, s:none, s:bold . s:italic)
+" Comment message "ERROR" keywords
 call s:HL('Error', s:gb.red, s:none, s:bold . s:inverse)
 
 " Generic statement
