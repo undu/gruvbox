@@ -703,10 +703,10 @@ hi! link Label GruvboxRed
 hi! link Exception GruvboxRed
 " sizeof, "+", "*", etc.
 call s:HL('Operator', s:gb.orange, s:none, s:italicize_operators)
-" Delimters
-hi! link Delimiter GruvboxBlue
-" Brackets
-hi! link Bracket GruvboxBlue
+" Punctuation
+hi! link Punctuation GruvboxBlue
+hi! link Delimiter Punctuation
+hi! link Bracket Punctuation
 " Any other keyword
 hi! link Keyword GruvboxRed
 
@@ -851,6 +851,7 @@ if has('nvim-0.7')
   hi! link @define Define
   hi! link @operator Operator
 
+  hi! link @punctuation Punctuation
   hi! link @punctuation.delimiter Delimiter
   hi! link @punctuation.bracket Bracket
   hi! link @punctuation.special Special
