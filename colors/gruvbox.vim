@@ -1334,6 +1334,13 @@ hi! link diffNewFile GruvboxYellow
 hi! link diffLine GruvboxBlue
 
 " }}}
+" Go: {{{
+
+hi! link goConst StorageClass
+hi! link goImport Include
+hi! link goParen Bracket
+
+" }}}
 " Html: {{{
 
 hi! link htmlTag Punctuation
@@ -1595,15 +1602,6 @@ hi! link javascriptSymbolStaticProp javascriptProp
 hi! link javascriptTypedArrayStaticProp javascriptProp
 hi! link javascriptURLUtilsProp javascriptProp
 hi! link javascriptXHRProp javascriptProp
-
-" }}}
-" Go: {{{
-
-hi! link goDirective GruvboxAqua
-hi! link goConstants GruvboxPurple
-hi! link goDeclaration GruvboxRed
-hi! link goDeclType GruvboxBlue
-hi! link goBuiltins GruvboxOrange
 
 " }}}
 " Lua: {{{
