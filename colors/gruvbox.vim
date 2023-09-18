@@ -1285,6 +1285,27 @@ hi! link DashboardFooter GruvboxPurple
 hi! link clojureStringEscape Special
 
 " }}}
+" CSS: {{{
+
+hi! link cssClassName Tag
+hi! link cssClassNameDot Operator
+hi! link cssFunctionName Special
+hi! link cssFunctionComma Special
+hi! link cssIdentifier Identifier
+hi! link cssImportant Keyword
+hi! link cssPseudoClassId Tag
+
+hi! link cssAttrComma Punctuation
+hi! link cssAtRule Punctuation
+hi! link cssBraces Punctuation
+hi! link cssNoise Punctuation
+hi! link cssSelectorOp2 Punctuation
+hi! link cssSelectorOp Punctuation
+
+hi! link cssProp Field
+hi! link cssVendor Field
+
+" }}}
 " Diff: {{{
 
 hi! link diffAdded GruvboxGreen
@@ -1429,41 +1450,6 @@ hi! link pythonDot GruvboxFg3
 hi! link pythonConditional GruvboxRed
 hi! link pythonRepeat GruvboxRed
 hi! link pythonDottedName GruvboxGreenBold
-
-" }}}
-" CSS: {{{
-
-hi! link cssBraces GruvboxBlue
-hi! link cssFunctionName GruvboxYellow
-hi! link cssIdentifier GruvboxOrange
-hi! link cssClassName GruvboxGreen
-hi! link cssColor GruvboxBlue
-hi! link cssSelectorOp GruvboxBlue
-hi! link cssSelectorOp2 GruvboxBlue
-hi! link cssImportant GruvboxGreen
-hi! link cssVendor GruvboxFg1
-
-hi! link cssTextProp GruvboxAqua
-hi! link cssAnimationProp GruvboxAqua
-hi! link cssUIProp GruvboxYellow
-hi! link cssTransformProp GruvboxAqua
-hi! link cssTransitionProp GruvboxAqua
-hi! link cssPrintProp GruvboxAqua
-hi! link cssPositioningProp GruvboxYellow
-hi! link cssBoxProp GruvboxAqua
-hi! link cssFontDescriptorProp GruvboxAqua
-hi! link cssFlexibleBoxProp GruvboxAqua
-hi! link cssBorderOutlineProp GruvboxAqua
-hi! link cssBackgroundProp GruvboxAqua
-hi! link cssMarginProp GruvboxAqua
-hi! link cssListProp GruvboxAqua
-hi! link cssTableProp GruvboxAqua
-hi! link cssFontProp GruvboxAqua
-hi! link cssPaddingProp GruvboxAqua
-hi! link cssDimensionProp GruvboxAqua
-hi! link cssRenderProp GruvboxAqua
-hi! link cssColorProp GruvboxAqua
-hi! link cssGeneratedContentProp GruvboxAqua
 
 " }}}
 " JavaScript: {{{
