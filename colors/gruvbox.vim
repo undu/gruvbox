@@ -1393,6 +1393,16 @@ hi! link jsxCloseString Punctuation
 hi! link jsxOpenPunct Punctuation
 
 "}}}
+" Lua: {{{
+
+hi! link luaBraces Bracket
+hi! link luaComma Punctuation
+hi! link luaFuncKeyword Keyword
+hi! link luaParen Bracket
+hi! link luaStringLongTag Special
+hi! link luaTable Bracket
+
+" }}}
 " ObjectiveC: {{{
 
 hi! link objcDirective Keyword
@@ -1602,13 +1612,6 @@ hi! link javascriptSymbolStaticProp javascriptProp
 hi! link javascriptTypedArrayStaticProp javascriptProp
 hi! link javascriptURLUtilsProp javascriptProp
 hi! link javascriptXHRProp javascriptProp
-
-" }}}
-" Lua: {{{
-
-hi! link luaIn GruvboxRed
-hi! link luaFunction GruvboxAqua
-hi! link luaTable GruvboxOrange
 
 " }}}
 " MoonScript: {{{
