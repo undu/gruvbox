@@ -702,7 +702,7 @@ hi! link Label GruvboxRed
 " try, catch, throw
 hi! link Exception GruvboxRed
 " sizeof, "+", "*", etc.
-call s:HL('Operator', s:gb.blue, s:none, s:italicize_operators)
+call s:HL('Operator', s:gb.orange, s:none, s:italicize_operators)
 " Delimters
 hi! link Delimiter GruvboxBlue
 " Brackets
