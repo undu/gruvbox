@@ -890,7 +890,9 @@ if has('nvim-0.7')
   hi! link @conditional.ternary Operator
   hi! link @repeat Repeat
   hi! link @debug Debug
-  hi! link @Label Label
+  hi! link @label Label
+  " Fix JSON fields appearing as labels (supposed to be "case", "default", etc.)
+  hi! link @label.json Field
   hi! link @include Include
   hi! link @exception Exception
 
