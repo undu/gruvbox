@@ -1291,6 +1291,17 @@ hi! link DashboardFooter GruvboxPurple
 hi! link clojureStringEscape Special
 
 " }}}
+" CoffeeScript: {{{
+
+hi! link coffeeBracket Bracket
+hi! link coffeeCurly Bracket
+hi! link coffeeExtendedOp Operator
+hi! link coffeeObjAssign Field
+hi! link coffeeObject Field
+hi! link coffeeParen Bracket
+hi! link coffeeSpecialOp Operator
+
+" }}}
 " CSS: {{{
 
 hi! link cssClassName Tag
@@ -1569,15 +1580,6 @@ hi! link javascriptSymbolStaticProp javascriptProp
 hi! link javascriptTypedArrayStaticProp javascriptProp
 hi! link javascriptURLUtilsProp javascriptProp
 hi! link javascriptXHRProp javascriptProp
-
-" }}}
-" CoffeeScript: {{{
-
-hi! link coffeeExtendedOp GruvboxFg3
-hi! link coffeeSpecialOp GruvboxFg3
-hi! link coffeeCurly GruvboxOrange
-hi! link coffeeParen GruvboxFg3
-hi! link coffeeBracket GruvboxOrange
 
 " }}}
 " Ruby: {{{
