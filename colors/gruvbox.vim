@@ -904,6 +904,8 @@ if has('nvim-0.7')
 
   hi! link @variable Identifier
   hi! link @variable.builtin Special
+  " Fix LSPs overwriting builtin variable colors
+  hi! link @lsp.typemod.variable.defaultLibrary @variable.builtin
 
   hi! link @constant Constant
   "hi! link @constant.builtin Special
