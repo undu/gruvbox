@@ -714,6 +714,8 @@ hi! link Keyword GruvboxRed
 hi! link Identifier GruvboxFg1
 " Field names
 hi! link Field GruvboxAqua
+" Tag names
+hi! link Tag GruvboxGreen
 " Function name
 hi! link Function GruvboxGreenBold
 
@@ -937,7 +939,7 @@ if has('nvim-0.7')
   hi! link @text.warning WarningMsg
 
   hi! link @tag Tag
-  hi! link @tag.attribute Identifier
+  hi! link @tag.attribute Field
   hi! link @tag.delimiter Delimiter
 endif
 
