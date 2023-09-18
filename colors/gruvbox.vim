@@ -906,7 +906,7 @@ if has('nvim-0.7')
   hi! link @storageclass StorageClass
   hi! link @attribute PreProc
   hi! link @field Field
-  hi! link @property Identifier
+  hi! link @property Field
 
   hi! link @variable Identifier
   hi! link @variable.builtin Special
