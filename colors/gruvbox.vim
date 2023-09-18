@@ -1334,6 +1334,16 @@ hi! link diffNewFile GruvboxYellow
 hi! link diffLine GruvboxBlue
 
 " }}}
+" Elixir: {{{
+
+hi! link elixirDocString Comment
+
+hi! link elixirStringDelimiter String
+hi! link elixirInterpolationDelimiter Punctuation
+
+hi! link elixirModuleDeclaration TypeDef
+
+" }}}
 " Go: {{{
 
 hi! link goConst StorageClass
@@ -1634,16 +1644,6 @@ hi! link javascriptSymbolStaticProp javascriptProp
 hi! link javascriptTypedArrayStaticProp javascriptProp
 hi! link javascriptURLUtilsProp javascriptProp
 hi! link javascriptXHRProp javascriptProp
-
-" }}}
-" Elixir: {{{
-
-hi! link elixirDocString Comment
-
-hi! link elixirStringDelimiter GruvboxGreen
-hi! link elixirInterpolationDelimiter GruvboxAqua
-
-hi! link elixirModuleDeclaration GruvboxYellow
 
 " }}}
 " Scala: {{{
