@@ -854,7 +854,7 @@ if has('nvim-0.7')
   hi! link @punctuation Punctuation
   hi! link @punctuation.delimiter Delimiter
   hi! link @punctuation.bracket Bracket
-  hi! link @punctuation.special Special
+  "hi! link @punctuation.special Special
 
   hi! link @string String
   "hi! link @string.regex String
