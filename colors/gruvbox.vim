@@ -1424,13 +1424,6 @@ hi! link docbkKeyword Tag
 call s:HL('docbkTitle', s:vim_fg, s:vim_bg, s:bold)
 
 " }}}
-" C: {{{
-
-hi! link cOperator GruvboxPurple
-hi! link cppOperator GruvboxPurple
-hi! link cStructure GruvboxOrange
-
-" }}}
 " Python: {{{
 
 hi! link pythonBuiltin GruvboxOrange
