@@ -1408,6 +1408,13 @@ hi! link pythonDecorator Operator
 hi! link pythonDot Operator
 
 " }}}
+" Ruby: {{{
+
+hi! link rubyDefinedOperator Keyword
+hi! link rubyInterpolationDelimiter Macro
+hi! link rubyStringDelimiter String
+
+" }}}
 " TypeScript: {{{
 
 hi! link typescriptAssign Operator
@@ -1580,13 +1587,6 @@ hi! link javascriptSymbolStaticProp javascriptProp
 hi! link javascriptTypedArrayStaticProp javascriptProp
 hi! link javascriptURLUtilsProp javascriptProp
 hi! link javascriptXHRProp javascriptProp
-
-" }}}
-" Ruby: {{{
-
-hi! link rubyStringDelimiter GruvboxGreen
-hi! link rubyInterpolationDelimiter GruvboxAqua
-hi! link rubyDefinedOperator rubyKeyword
 
 " }}}
 " ObjectiveC: {{{
