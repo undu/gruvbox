@@ -707,6 +707,7 @@ call s:HL('Operator', s:gb.orange, s:none, s:italicize_operators)
 hi! link Punctuation GruvboxBlue
 hi! link Delimiter Punctuation
 hi! link Bracket Punctuation
+hi! link Noise Punctuation
 " Any other keyword
 hi! link Keyword GruvboxRed
 
@@ -1298,7 +1299,6 @@ hi! link cssPseudoClassId Tag
 hi! link cssAttrComma Punctuation
 hi! link cssAtRule Punctuation
 hi! link cssBraces Punctuation
-hi! link cssNoise Punctuation
 hi! link cssSelectorOp2 Punctuation
 hi! link cssSelectorOp Punctuation
 
