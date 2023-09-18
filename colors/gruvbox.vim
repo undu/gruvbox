@@ -1280,6 +1280,11 @@ hi! link DashboardFooter GruvboxPurple
 " }}}
 
 " Filetype specific -----------------------------------------------------------
+" Clojure: {{{
+
+hi! link clojureStringEscape Special
+
+" }}}
 " Diff: {{{
 
 hi! link diffAdded GruvboxGreen
@@ -1396,36 +1401,6 @@ hi! link dtdTagName Special
 
 hi! link docbkKeyword Tag
 call s:HL('docbkTitle', s:vim_fg, s:vim_bg, s:bold)
-
-" }}}
-" Clojure: {{{
-
-hi! link clojureKeyword GruvboxBlue
-hi! link clojureCond GruvboxOrange
-hi! link clojureSpecial GruvboxOrange
-hi! link clojureDefine GruvboxOrange
-
-hi! link clojureFunc GruvboxYellow
-hi! link clojureRepeat GruvboxYellow
-hi! link clojureCharacter GruvboxAqua
-hi! link clojureStringEscape GruvboxAqua
-hi! link clojureException GruvboxRed
-
-hi! link clojureRegexp GruvboxAqua
-hi! link clojureRegexpEscape GruvboxAqua
-call s:HL('clojureRegexpCharClass', s:gb.fg3, s:none, s:bold)
-hi! link clojureRegexpMod clojureRegexpCharClass
-hi! link clojureRegexpQuantifier clojureRegexpCharClass
-
-hi! link clojureParen GruvboxFg3
-hi! link clojureAnonArg GruvboxYellow
-hi! link clojureVariable GruvboxBlue
-hi! link clojureMacro GruvboxOrange
-
-hi! link clojureMeta GruvboxYellow
-hi! link clojureDeref GruvboxYellow
-hi! link clojureQuote GruvboxYellow
-hi! link clojureUnquote GruvboxYellow
 
 " }}}
 " C: {{{
