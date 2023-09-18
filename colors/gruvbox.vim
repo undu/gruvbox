@@ -1348,10 +1348,72 @@ call s:HL('htmlUnderlineItalic', s:vim_fg, s:vim_bg, s:underline . s:italic)
 call s:HL('htmlItalic', s:vim_fg, s:vim_bg, s:italic)
 
 " }}}
+" Javascript: {{{
+
+hi! link javaScriptBraces Bracket
+
+" }}}
+" Json: {{{
+
+hi! link jsonBraces Punctuation
+hi! link jsonKeyword Field
+hi! link jsonKeywordMatch Punctuation
+hi! link jsonQuote String
+hi! link jsonString String
+
+" }}}
+" JSX: maxmellon/vim-jsx-pretty: {{{
+
+hi! link jsxAttrib Field
+hi! link jsxBraces Special
+hi! link jsxComponentName Type
+hi! link jsxEqual Operator
+hi! link jsxTagName Tag
+
+hi! link jsxClosePunct Punctuation
+hi! link jsxCloseString Punctuation
+hi! link jsxOpenPunct Punctuation
+
+"}}}
+" PanglossJS: {{{
+
+hi! link jsArrowFunction Punctuation
+hi! link jsDocParam Field
+hi! link jsDocTags Keyword
+hi! link jsNull Special
+hi! link jsObjectKey Field
+hi! link jsObjectProp Field
+
+" }}}
 " Python: {{{
 
 hi! link pythonDecorator Operator
 hi! link pythonDot Operator
+
+" }}}
+" TypeScript: {{{
+
+hi! link typescriptAssign Operator
+hi! link typescriptBinaryOp Operator
+hi! link typescriptCastKeyword Keyword
+hi! link typescriptDocNotation Keyword
+hi! link typescriptDocParam Field
+hi! link typescriptDocTags Keyword
+hi! link typescriptExport Include
+hi! link typescriptImport Include
+hi! link typescriptInterfaceName TypeDef
+hi! link typescriptKeywordOp Operator
+hi! link typescriptMember Field
+hi! link typescriptObjectLabel Field
+hi! link typescriptTernary Operator
+hi! link typescriptVariable Type
+
+hi! link typescriptAssign Punctuation
+hi! link typescriptBraces Punctuation
+hi! link typescriptEndColons Punctuation
+hi! link typescriptObjectColon Punctuation
+hi! link typescriptParens Punctuation
+hi! link typescriptTypeAnnotation Punctuation
 
 " }}}
 " Vim: {{{
@@ -1435,148 +1497,74 @@ hi! link docbkKeyword Tag
 call s:HL('docbkTitle', s:vim_fg, s:vim_bg, s:bold)
 
 " }}}
-" JavaScript: {{{
-
-hi! link javaScriptBraces GruvboxFg1
-hi! link javaScriptFunction GruvboxAqua
-hi! link javaScriptIdentifier GruvboxRed
-hi! link javaScriptMember GruvboxBlue
-hi! link javaScriptNumber GruvboxPurple
-hi! link javaScriptNull GruvboxPurple
-hi! link javaScriptParens GruvboxFg3
-
-" }}}
 " YAJS: {{{
 
-hi! link javascriptImport GruvboxAqua
-hi! link javascriptExport GruvboxAqua
-hi! link javascriptClassKeyword GruvboxAqua
-hi! link javascriptClassExtends GruvboxAqua
-hi! link javascriptDefault GruvboxAqua
+hi! link javascriptEndColons Punctuation
+hi! link javascriptDocParam Identifier
+hi! link javascriptDocNotation Keyword
+hi! link javascriptDocParamName Field
+hi! link javascriptDocParamType Type
+hi! link javascriptDocTags Keyword
+hi! link javascriptDocName Field
+hi! link javascriptParens Bracket
+hi! link javascriptBraces Bracket
+hi! link javascriptBrackets Bracket
+hi! link javascriptFuncArg Identifier
+hi! link javascriptArrowFuncArg Identifier
+hi! link javascriptArrowFunc Punctuation
+hi! link javascriptVariable StorageClass
+hi! link javascriptLabel Field
+hi! link javascriptGlobal Special
+hi! link javascriptOperator Operator
+hi! link javascriptOpSymbol Operator
+hi! link javascriptOpSymbols Operator
+hi! link javascriptDotNotation Punctuation
+hi! link javascriptComma Punctuation
+hi! link javascriptObjectLabelColon Punctuation
+hi! link javascriptNull Constant
+hi! link javascriptIdentifierName Identifier
+hi! link javascriptMethod Function
+hi! link javascriptNumber Number
+hi! link javascriptTemplateSubstitution Punctuation
+hi! link javascriptParenObjectLiteral Bracket
+hi! link javascriptParenTagLiteral Bracket
 
-hi! link javascriptClassName GruvboxYellow
-hi! link javascriptClassSuperName GruvboxYellow
-hi! link javascriptGlobal GruvboxYellow
-
-hi! link javascriptEndColons GruvboxFg1
-hi! link javascriptFuncArg GruvboxFg1
-hi! link javascriptGlobalMethod GruvboxFg1
-hi! link javascriptNodeGlobal GruvboxFg1
-hi! link javascriptBOMWindowProp GruvboxFg1
-hi! link javascriptArrayMethod GruvboxFg1
-hi! link javascriptArrayStaticMethod GruvboxFg1
-hi! link javascriptCacheMethod GruvboxFg1
-hi! link javascriptDateMethod GruvboxFg1
-hi! link javascriptMathStaticMethod GruvboxFg1
-
-" hi! link javascriptProp GruvboxFg1
-hi! link javascriptURLUtilsProp GruvboxFg1
-hi! link javascriptBOMNavigatorProp GruvboxFg1
-hi! link javascriptDOMDocMethod GruvboxFg1
-hi! link javascriptDOMDocProp GruvboxFg1
-hi! link javascriptBOMLocationMethod GruvboxFg1
-hi! link javascriptBOMWindowMethod GruvboxFg1
-hi! link javascriptStringMethod GruvboxFg1
-
-hi! link javascriptVariable GruvboxOrange
-" hi! link javascriptVariable GruvboxRed
-" hi! link javascriptIdentifier GruvboxOrange
-" hi! link javascriptClassSuper GruvboxOrange
-hi! link javascriptIdentifier GruvboxOrange
-hi! link javascriptClassSuper GruvboxOrange
-
-" hi! link javascriptFuncKeyword GruvboxOrange
-" hi! link javascriptAsyncFunc GruvboxOrange
-hi! link javascriptFuncKeyword GruvboxAqua
-hi! link javascriptAsyncFunc GruvboxAqua
-hi! link javascriptClassStatic GruvboxOrange
-
-hi! link javascriptOperator GruvboxRed
-hi! link javascriptForOperator GruvboxRed
-hi! link javascriptYield GruvboxRed
-hi! link javascriptExceptions GruvboxRed
-hi! link javascriptMessage GruvboxRed
-
-hi! link javascriptTemplateSB GruvboxAqua
-hi! link javascriptTemplateSubstitution GruvboxFg1
-
-" hi! link javascriptLabel GruvboxBlue
-" hi! link javascriptObjectLabel GruvboxBlue
-" hi! link javascriptPropertyName GruvboxBlue
-hi! link javascriptLabel GruvboxFg1
-hi! link javascriptObjectLabel GruvboxFg1
-hi! link javascriptPropertyName GruvboxFg1
-
-hi! link javascriptLogicSymbols GruvboxFg1
-hi! link javascriptArrowFunc GruvboxYellow
-
-hi! link javascriptDocParamName GruvboxFg4
-hi! link javascriptDocTags GruvboxFg4
-hi! link javascriptDocNotation GruvboxFg4
-hi! link javascriptDocParamType GruvboxFg4
-hi! link javascriptDocNamedParamType GruvboxFg4
-
-hi! link javascriptBrackets GruvboxFg1
-hi! link javascriptDOMElemAttrs GruvboxFg1
-hi! link javascriptDOMEventMethod GruvboxFg1
-hi! link javascriptDOMNodeMethod GruvboxFg1
-hi! link javascriptDOMStorageMethod GruvboxFg1
-hi! link javascriptHeadersMethod GruvboxFg1
-
-hi! link javascriptAsyncFuncKeyword GruvboxRed
-hi! link javascriptAwaitFuncKeyword GruvboxRed
+hi! link javascriptProp Field
+hi! link javascriptBOMHistoryProp javascriptProp
+hi! link javascriptBOMLocationProp javascriptProp
+hi! link javascriptBOMNavigatorProp javascriptProp
+hi! link javascriptBOMNetworkProp javascriptProp
+hi! link javascriptBOMWindowProp javascriptProp
+hi! link javascriptBroadcastProp javascriptProp
+hi! link javascriptCryptoProp javascriptProp
+hi! link javascriptDataViewProp javascriptProp
+hi! link javascriptDOMDocProp javascriptProp
+hi! link javascriptDOMEventProp javascriptProp
+hi! link javascriptDOMFormProp javascriptProp
+hi! link javascriptDOMNodeProp javascriptProp
+hi! link javascriptDOMStorageProp javascriptProp
+hi! link javascriptEncodingProp javascriptProp
+hi! link javascriptES6MapProp javascriptProp
+hi! link javascriptES6SetProp javascriptProp
+hi! link javascriptFileReaderProp javascriptProp
+hi! link javascriptMathStaticProp javascriptProp
+hi! link javascriptNumberStaticProp javascriptProp
+hi! link javascriptPaymentAddressProp javascriptProp
+hi! link javascriptPaymentProp javascriptProp
+hi! link javascriptPaymentResponseProp javascriptProp
+hi! link javascriptPaymentShippingOptionProp javascriptProp
+hi! link javascriptRegExpProp javascriptProp
+hi! link javascriptRegExpStaticProp javascriptProp
+hi! link javascriptRequestProp javascriptProp
+hi! link javascriptResponseProp javascriptProp
+hi! link javascriptServiceWorkerProp javascriptProp
+hi! link javascriptSymbolProp javascriptProp
+hi! link javascriptSymbolStaticProp javascriptProp
+hi! link javascriptTypedArrayStaticProp javascriptProp
+hi! link javascriptURLUtilsProp javascriptProp
+hi! link javascriptXHRProp javascriptProp
 
 " }}}
-" PanglossJS: {{{
-
-hi! link jsClassKeyword GruvboxAqua
-hi! link jsExtendsKeyword GruvboxAqua
-hi! link jsExportDefault GruvboxAqua
-hi! link jsTemplateBraces GruvboxAqua
-hi! link jsGlobalNodeObjects GruvboxBlue
-hi! link jsGlobalObjects GruvboxBlue
-hi! link jsObjectKey GruvboxGreenBold
-hi! link jsFunction GruvboxAqua
-hi! link jsFuncCall GruvboxBlue
-hi! link jsFuncParens GruvboxFg3
-hi! link jsParens GruvboxFg3
-hi! link jsNull GruvboxPurple
-hi! link jsUndefined GruvboxPurple
-hi! link jsClassDefinition GruvboxYellow
-hi! link jsOperatorKeyword GruvboxRed
-
-" }}}
-" TypeScript: {{{
-
-hi! link typescriptReserved GruvboxAqua
-hi! link typescriptLabel GruvboxAqua
-hi! link typescriptFuncKeyword GruvboxAqua
-hi! link typescriptIdentifier GruvboxOrange
-hi! link typescriptBraces GruvboxFg1
-hi! link typescriptEndColons GruvboxFg1
-hi! link typescriptDOMObjects GruvboxFg1
-hi! link typescriptAjaxMethods GruvboxFg1
-hi! link typescriptLogicSymbols GruvboxFg1
-hi! link typescriptDocSeeTag Comment
-hi! link typescriptDocParam Comment
-hi! link typescriptDocTags vimCommentTitle
-hi! link typescriptGlobalObjects GruvboxFg1
-hi! link typescriptParens GruvboxFg3
-hi! link typescriptOpSymbols GruvboxFg3
-hi! link typescriptHtmlElemProperties GruvboxFg1
-hi! link typescriptNull GruvboxPurple
-hi! link typescriptInterpolationDelimiter GruvboxAqua
-
-" }}}
-" JSX: maxmellon/vim-jsx-pretty: {{{
-
-hi! link jsxTagName GruvboxAqua
-hi! link jsxComponentName GruvboxGreen
-hi! link jsxCloseString GruvboxFg4
-hi! link jsxAttrib GruvboxYellow
-hi! link jsxEqual GruvboxAqua
-
-"}}}
 " PureScript: {{{
 
 hi! link purescriptModuleKeyword GruvboxAqua
@@ -1765,14 +1753,6 @@ hi! link haskellPreProc GruvboxFg4
 hi! link haskellTypeRoles GruvboxRedBold
 hi! link haskellTypeForall GruvboxRed
 hi! link haskellPatternKeyword GruvboxBlue
-
-" }}}
-" Json: {{{
-
-hi! link jsonKeyword GruvboxGreen
-hi! link jsonQuote GruvboxGreen
-hi! link jsonBraces GruvboxFg1
-hi! link jsonString GruvboxFg1
 
 " }}}
 " Mail: {{{
