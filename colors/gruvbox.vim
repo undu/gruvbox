@@ -1386,6 +1386,14 @@ hi! link jsxCloseString Punctuation
 hi! link jsxOpenPunct Punctuation
 
 "}}}
+" ObjectiveC: {{{
+
+hi! link objcDirective Keyword
+hi! link objcObjDef Keyword
+hi! link objcPropertyAttribute Field
+hi! link objcTypeModifier GruvboxRed
+
+" }}}
 " PanglossJS: {{{
 
 hi! link jsArrowFunction Punctuation
@@ -1587,12 +1595,6 @@ hi! link javascriptSymbolStaticProp javascriptProp
 hi! link javascriptTypedArrayStaticProp javascriptProp
 hi! link javascriptURLUtilsProp javascriptProp
 hi! link javascriptXHRProp javascriptProp
-
-" }}}
-" ObjectiveC: {{{
-
-hi! link objcTypeModifier GruvboxRed
-hi! link objcDirective GruvboxBlue
 
 " }}}
 " Go: {{{
