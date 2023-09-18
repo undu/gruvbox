@@ -213,17 +213,17 @@ let s:none = ['NONE', 'NONE']
 
 " determine relative colors
 if s:is_dark
-  let s:bg0  = s:gb.dark0
+  let s:bg0 = s:gb.dark0
   if g:gruvbox_contrast_dark ==# 'soft'
-    let s:bg0  = s:gb.dark0_soft
+    let s:bg0 = s:gb.dark0_soft
   elseif g:gruvbox_contrast_dark ==# 'hard'
-    let s:bg0  = s:gb.dark0_hard
+    let s:bg0 = s:gb.dark0_hard
   endif
 
-  let s:bg1  = s:gb.dark1
-  let s:bg2  = s:gb.dark2
-  let s:bg3  = s:gb.dark3
-  let s:bg4  = s:gb.dark4
+  let s:bg1 = s:gb.dark1
+  let s:bg2 = s:gb.dark2
+  let s:bg3 = s:gb.dark3
+  let s:bg4 = s:gb.dark4
 
   let s:gray = s:gb.gray_245
 
@@ -243,17 +243,17 @@ if s:is_dark
   let s:aqua   = s:gb.bright_aqua
   let s:orange = s:gb.bright_orange
 else
-  let s:bg0  = s:gb.light0
+  let s:bg0 = s:gb.light0
   if g:gruvbox_contrast_light ==# 'soft'
-    let s:bg0  = s:gb.light0_soft
+    let s:bg0 = s:gb.light0_soft
   elseif g:gruvbox_contrast_light ==# 'hard'
-    let s:bg0  = s:gb.light0_hard
+    let s:bg0 = s:gb.light0_hard
   endif
 
-  let s:bg1  = s:gb.light1
-  let s:bg2  = s:gb.light2
-  let s:bg3  = s:gb.light3
-  let s:bg4  = s:gb.light4
+  let s:bg1 = s:gb.light1
+  let s:bg2 = s:gb.light2
+  let s:bg3 = s:gb.light3
+  let s:bg4 = s:gb.light4
 
   let s:gray = s:gb.gray_244
 
@@ -600,7 +600,7 @@ endif
 
 if v:version >= 703
   " Highlighted screen columns
-  call s:HL('ColorColumn',  s:none, s:color_column)
+  call s:HL('ColorColumn', s:none, s:color_column)
 
   " Concealed element: \lambda → λ
   call s:HL('Conceal', s:gb.blue, s:none)
@@ -612,7 +612,7 @@ endif
 hi! link NonText GruvboxBg2
 hi! link SpecialKey GruvboxFg4
 
-call s:HL('Visual',    s:none,  s:gb.bg3, s:invert_selection)
+call s:HL('Visual', s:none, s:gb.bg3, s:invert_selection)
 hi! link VisualNOS Visual
 
 call s:HL('Search', s:hls_highlight, s:gb.bg0, s:inverse)
@@ -622,7 +622,7 @@ call s:HL('QuickFixLine', s:gb.bg0, s:gb.yellow, s:bold)
 
 call s:HL('Underlined', s:gb.blue, s:none, s:underline)
 
-call s:HL('StatusLine',   s:gb.bg2, s:gb.fg1, s:inverse)
+call s:HL('StatusLine', s:gb.bg2, s:gb.fg1, s:inverse)
 call s:HL('StatusLineNC', s:gb.bg1, s:gb.fg4, s:inverse)
 
 " The column separating vertically split windows
@@ -638,7 +638,7 @@ hi! link Directory GruvboxGreenBold
 hi! link Title GruvboxGreenBold
 
 " Error messages on the command line
-call s:HL('ErrorMsg',   s:gb.bg0, s:gb.red, s:bold)
+call s:HL('ErrorMsg',s:gb.bg0, s:gb.red, s:bold)
 " More prompt: -- More --
 hi! link MoreMsg GruvboxYellowBold
 " Current mode message: -- INSERT --
@@ -698,7 +698,7 @@ hi! link Label GruvboxRed
 " try, catch, throw
 hi! link Exception GruvboxRed
 " sizeof, "+", "*", etc.
-call s:HL('Operator',  s:gb.blue, s:none, s:italicize_operators)
+call s:HL('Operator', s:gb.blue, s:none, s:italicize_operators)
 " Delimters
 hi! link Delimiter GruvboxBlue
 " Brackets
@@ -728,9 +728,9 @@ hi! link Constant GruvboxPurple
 hi! link Character GruvboxPurple
 " String constant: "this is a string"
 if g:gruvbox_improved_strings == 0
-  call s:HL('String',  s:gb.green, s:none, s:italicize_strings)
+  call s:HL('String', s:gb.green, s:none, s:italicize_strings)
 else
-  call s:HL('String',  s:gb.fg1, s:gb.bg1, s:italicize_strings)
+  call s:HL('String', s:gb.fg1, s:gb.bg1, s:italicize_strings)
 endif
 " Boolean constant: TRUE, false
 hi! link Boolean GruvboxPurple
@@ -782,7 +782,7 @@ if has('spell')
   if g:gruvbox_improved_warnings == 0
     hi! link SpellCap GruvboxBlueUnderline
   else
-    call s:HL('SpellCap',   s:gb.green, s:none, s:bold . s:italic)
+    call s:HL('SpellCap', s:gb.green, s:none, s:bold . s:italic)
   endif
   " Not recognized word
   hi! link SpellBad GruvboxRedUnderline
