@@ -712,7 +712,7 @@ hi! link Keyword GruvboxRed
 
 " Variable name
 hi! link Identifier GruvboxFg1
-" Field names
+" Field/attribute names
 hi! link Field GruvboxAqua
 " Tag names
 hi! link Tag GruvboxGreen
@@ -1294,18 +1294,18 @@ hi! link diffLine GruvboxBlue
 " }}}
 " Html: {{{
 
-hi! link htmlTag GruvboxAquaBold
-hi! link htmlEndTag GruvboxAquaBold
+hi! link htmlTag Punctuation
+hi! link htmlEndTag Punctuation
 
-hi! link htmlTagName GruvboxBlue
-hi! link htmlArg GruvboxOrange
+hi! link htmlTagName Tag
+hi! link htmlArg Field
 
-hi! link htmlTagN GruvboxFg1
-hi! link htmlSpecialTagName GruvboxBlue
+hi! link htmlTagN Normal
+hi! link htmlSpecialTagName Special
 
 call s:HL('htmlLink', s:gb.fg4, s:none, s:underline)
 
-hi! link htmlSpecialChar GruvboxRed
+hi! link htmlSpecialChar Special
 
 call s:HL('htmlBold', s:vim_fg, s:vim_bg, s:bold)
 call s:HL('htmlBoldUnderline', s:vim_fg, s:vim_bg, s:bold . s:underline)
@@ -1319,27 +1319,39 @@ call s:HL('htmlItalic', s:vim_fg, s:vim_bg, s:italic)
 " }}}
 " Xml: {{{
 
-hi! link xmlTag GruvboxAquaBold
-hi! link xmlEndTag GruvboxAquaBold
-hi! link xmlTagName GruvboxBlue
-hi! link xmlEqual GruvboxBlue
-hi! link docbkKeyword GruvboxAquaBold
+hi! link xmlTag Punctuation
+hi! link xmlEndTag Punctuation
+hi! link xmlTagName Tag
+hi! link xmlEqual Operator
 
-hi! link xmlDocTypeDecl GruvboxGray
-hi! link xmlDocTypeKeyword GruvboxPurple
-hi! link xmlCdataStart GruvboxGray
-hi! link xmlCdataCdata GruvboxPurple
-hi! link dtdFunction GruvboxGray
-hi! link dtdTagName GruvboxPurple
+hi! link xmlDocType Field
+hi! link xmlDocTypeDecl Punctuation
+hi! link xmlDocTypeKeyword Special
 
-hi! link xmlAttrib GruvboxOrange
-hi! link xmlProcessingDelim GruvboxGray
-hi! link dtdParamEntityPunct GruvboxGray
-hi! link dtdParamEntityDPunct GruvboxGray
-hi! link xmlAttribPunct GruvboxGray
+hi! link xmlCdataStart Punctuation
+hi! link xmlCdataEnd Punctuation
+hi! link xmlCdataCdata Special
+hi! link xmlCdata String
 
-hi! link xmlEntity GruvboxRed
-hi! link xmlEntityPunct GruvboxRed
+hi! link xmlAttrib Field
+hi! link xmlProcessingDelim Punctuation
+hi! link xmlAttribPunct Punctuation
+
+hi! link xmlEntity Special
+hi! link xmlEntityPunct Special
+
+hi! link dtdAttrType Type
+hi! link dtdCard Operator
+hi! link dtdEnum Constant
+hi! link dtdFunction Punctuation
+hi! link dtdParamEntityDPunct Punctuation
+hi! link dtdParamEntityPunct Punctuation
+hi! link dtdString String
+hi! link dtdTag Field
+hi! link dtdTagName Special
+
+hi! link docbkKeyword Tag
+call s:HL('docbkTitle', s:vim_fg, s:vim_bg, s:bold)
 
 " }}}
 " Vim: {{{
