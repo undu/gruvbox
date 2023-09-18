@@ -1317,6 +1317,50 @@ call s:HL('htmlUnderlineItalic', s:vim_fg, s:vim_bg, s:underline . s:italic)
 call s:HL('htmlItalic', s:vim_fg, s:vim_bg, s:italic)
 
 " }}}
+" Vim: {{{
+
+call s:HL('vimCommentTitle', s:gb.fg4_256, s:none, s:bold . s:italicize_comments)
+
+hi! link vimCommand Keyword
+hi! link vimMapModKey Special
+hi! link vimNotation Special
+hi! link vimOption Special
+hi! link vimSet Normal
+hi! link vimUsrCmd Macro
+hi! link vimVar Variable
+
+" Vim syntax is unable to highlight some punctuation at all.
+" Make punctuation closer to the default white instead of the default color.
+
+" hi! link vimBracket Punctuation
+" hi! link vimContinue Punctuation
+" hi! link vimEcho Punctuation
+" hi! link vimFuncBody Punctuation
+" hi! link vimOperParen Punctuation
+" hi! link vimParenSep Punctuation
+" hi! link vimSep Punctuation
+" hi! link vimSetSep Punctuation
+
+hi! link vimBracket GruvboxFg3
+hi! link vimContinue GruvboxFg3
+hi! link vimEcho GruvboxFg3
+hi! link vimOperParen GruvboxFg3
+hi! link vimParenSep GruvboxFg3
+hi! link vimSep GruvboxFg3
+hi! link vimSetSep GruvboxFg3
+
+" Vim syntax is unable to highlight complete user functions calls/definitions.
+" Make these appear the same as variables instead of the default color.
+
+" hi! link vimFunction Function
+" hi! link vimFuncSID Function
+" hi! link vimUserFunc Function
+
+hi! link vimFunction Variable
+hi! link vimFuncSID Variable
+hi! link vimUserFunc Variable
+
+" }}}
 " Xml: {{{
 
 hi! link xmlTag Punctuation
@@ -1352,19 +1396,6 @@ hi! link dtdTagName Special
 
 hi! link docbkKeyword Tag
 call s:HL('docbkTitle', s:vim_fg, s:vim_bg, s:bold)
-
-" }}}
-" Vim: {{{
-
-call s:HL('vimCommentTitle', s:gb.fg4_256, s:none, s:bold . s:italicize_comments)
-
-hi! link vimNotation GruvboxOrange
-hi! link vimBracket GruvboxOrange
-hi! link vimMapModKey GruvboxOrange
-hi! link vimFuncSID GruvboxFg3
-hi! link vimSetSep GruvboxFg3
-hi! link vimSep GruvboxFg3
-hi! link vimContinue GruvboxFg3
 
 " }}}
 " Clojure: {{{
