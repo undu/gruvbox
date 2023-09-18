@@ -880,6 +880,7 @@ if has('nvim-0.7')
   "hi! link @keyword.return Special
 
   hi! link @conditional Conditional
+  hi! link @conditional.ternary Operator
   hi! link @repeat Repeat
   hi! link @debug Debug
   hi! link @Label Label
