@@ -620,7 +620,7 @@ call s:HL('IncSearch', s:hls_cursor, s:gb.bg0, s:inverse)
 
 call s:HL('QuickFixLine', s:gb.bg0, s:gb.yellow, s:bold)
 
-call s:HL('Underlined', s:gb.blue, s:none, s:underline)
+call s:HL('Underlined', s:fg3, s:none, s:underline)
 
 call s:HL('StatusLine', s:gb.bg2, s:gb.fg1, s:inverse)
 call s:HL('StatusLineNC', s:gb.bg1, s:gb.fg4, s:inverse)
@@ -690,8 +690,22 @@ call s:HL('Comment', s:gb.gray, s:none, s:italicize_comments)
 call s:HL('Todo', s:vim_fg, s:none, s:bold . s:italic)
 " Comment message "ERROR" keywords
 call s:HL('Error', s:gb.red, s:none, s:bold . s:inverse)
-" Links
-call s:HL('Link', s:gb.blue, s:none, s:underline)
+
+" Link text
+call s:HL('Link', s:gb.purple, s:none, s:underline)
+" Heading text
+hi! link H1 GruvboxGreenBold
+hi! link H2 GruvboxGreenBold
+hi! link H3 GruvboxGreen
+hi! link H4 GruvboxGreen
+hi! link H5 GruvboxGreen
+hi! link H6 GruvboxGreen
+" Example code in comments
+hi! link CodeBlock GruvboxAqua
+" Quote text
+hi! link Quote GruvboxFg3
+" Normal text
+hi! link Text GruvboxFg1
 
 " Generic statement
 hi! link Statement GruvboxRed
@@ -928,18 +942,18 @@ if has('nvim-0.7')
   hi! link @namespace Include
   "hi! link @symbol Identifier
 
-  hi! link @text Normal
+  hi! link @text Text
   hi! link @text.strong Bold
   hi! link @text.emphasis Bold
   hi! link @text.underline Underlined
   hi! link @text.strike Strikethrough
   hi! link @text.title Title
   hi! link @text.literal String
-  hi! link @text.uri Underlined
+  hi! link @text.uri Link
   hi! link @text.math Special
   hi! link @text.environment PreProc
   hi! link @text.environment.name Delimiter
-  hi! link @text.reference Constant
+  hi! link @text.reference Identifier
 
   hi! link @text.todo Todo
   hi! link @text.note SpecialComment
@@ -1430,6 +1444,41 @@ hi! link luaStringLongTag Special
 hi! link luaTable Bracket
 
 " }}}
+" Markdown: {{{
+
+call s:HL('markdownItalic', s:fg3, s:none, s:italic)
+call s:HL('markdownBold', s:fg3, s:none, s:bold)
+call s:HL('markdownBoldItalic', s:fg3, s:none, s:bold . s:italic)
+
+hi! link markdownH1 H1
+hi! link markdownH2 H2
+hi! link markdownH3 H3
+hi! link markdownH4 H4
+hi! link markdownH5 H5
+hi! link markdownH6 H6
+hi! link markdownHeadingDelimiter GruvboxGreen
+
+hi! link markdownCode CodeBlock
+hi! link markdownCodeBlock CodeBlock
+hi! link markdownCodeDelimiter Punctuation
+
+hi! link markdownBlockquote Quote
+hi! link markdownListMarker Punctuation
+hi! link markdownOrderedListMarker Punctuation
+hi! link markdownRule Punctuation
+hi! link markdownHeadingRule Punctuation
+
+hi! link markdownUrlDelimiter Punctuation
+hi! link markdownLinkDelimiter Punctuation
+hi! link markdownLinkTextDelimiter Punctuation
+
+hi! link markdownUrl Link
+hi! link markdownUrlTitleDelimiter Punctuation
+
+hi! link markdownLinkText Identifier
+hi! link markdownIdDeclaration Identifier
+
+" }}}
 " MoonScript: {{{
 
 hi! link moonFunction Punctuation
@@ -1477,7 +1526,7 @@ hi! link rubyStringDelimiter String
 " Scala: {{{
 
 hi! link scalaCommentAnnotation Keyword
-hi! link scalaCommentCodeBlock Identifier
+hi! link scalaCommentCodeBlock CodeBlock
 hi! link scalaDocLinks Link
 hi! link scalaMultilineComment Comment
 hi! link scalaParamAnnotationValue Field
@@ -1698,41 +1747,6 @@ hi! link javascriptSymbolStaticProp javascriptProp
 hi! link javascriptTypedArrayStaticProp javascriptProp
 hi! link javascriptURLUtilsProp javascriptProp
 hi! link javascriptXHRProp javascriptProp
-
-" }}}
-" Markdown: {{{
-
-call s:HL('markdownItalic', s:fg3, s:none, s:italic)
-call s:HL('markdownBold', s:fg3, s:none, s:bold)
-call s:HL('markdownBoldItalic', s:fg3, s:none, s:bold . s:italic)
-
-hi! link markdownH1 GruvboxGreenBold
-hi! link markdownH2 GruvboxGreenBold
-hi! link markdownH3 GruvboxYellowBold
-hi! link markdownH4 GruvboxYellowBold
-hi! link markdownH5 GruvboxYellow
-hi! link markdownH6 GruvboxYellow
-
-hi! link markdownCode GruvboxAqua
-hi! link markdownCodeBlock GruvboxAqua
-hi! link markdownCodeDelimiter GruvboxAqua
-
-hi! link markdownBlockquote GruvboxGray
-hi! link markdownListMarker GruvboxGray
-hi! link markdownOrderedListMarker GruvboxGray
-hi! link markdownRule GruvboxGray
-hi! link markdownHeadingRule GruvboxGray
-
-hi! link markdownUrlDelimiter GruvboxFg3
-hi! link markdownLinkDelimiter GruvboxFg3
-hi! link markdownLinkTextDelimiter GruvboxFg3
-
-hi! link markdownHeadingDelimiter GruvboxOrange
-hi! link markdownUrl GruvboxPurple
-hi! link markdownUrlTitleDelimiter GruvboxGreen
-
-call s:HL('markdownLinkText', s:gray, s:none, s:underline)
-hi! link markdownIdDeclaration markdownLinkText
 
 " }}}
 " Haskell: {{{
