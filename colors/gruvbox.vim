@@ -1565,6 +1565,15 @@ hi! link objcPropertyAttribute Field
 hi! link objcTypeModifier GruvboxRed
 
 " }}}
+" Ocaml: {{{
+
+hi! link ocamlArrow Operator
+hi! link ocamlConstructor Type
+hi! link ocamlInfixOpKeyword Keyword
+hi! link ocamlKeyChar Operator
+hi! link ocamlOperator Operator
+
+" }}}
 " PanglossJS: {{{
 
 hi! link jsArrowFunction Punctuation
@@ -1592,6 +1601,13 @@ hi! link pythonDot Operator
 hi! link rubyDefinedOperator Keyword
 hi! link rubyInterpolationDelimiter Macro
 hi! link rubyStringDelimiter String
+
+" }}}
+" Rust: {{{
+
+hi! link rustFoldBraces Bracket
+hi! link rustSelf Special
+hi! link rustSigil Operator
 
 " }}}
 " Scala: {{{
@@ -1818,22 +1834,6 @@ hi! link javascriptSymbolStaticProp javascriptProp
 hi! link javascriptTypedArrayStaticProp javascriptProp
 hi! link javascriptURLUtilsProp javascriptProp
 hi! link javascriptXHRProp javascriptProp
-
-" }}}
-" Rust: {{{
-
-hi! link rustFoldBraces Bracket
-hi! link rustSelf Special
-hi! link rustSigil Operator
-
-" }}}
-" Ocaml: {{{
-
-hi! link ocamlOperator GruvboxFg1
-hi! link ocamlKeyChar GruvboxOrange
-hi! link ocamlArrow GruvboxOrange
-hi! link ocamlInfixOpKeyword GruvboxRed
-hi! link ocamlConstructor GruvboxOrange
 
 " }}}
 
