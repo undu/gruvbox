@@ -1367,6 +1367,46 @@ hi! link goImport Include
 hi! link goParen Bracket
 
 " }}}
+" Haskell: {{{
+
+hi! link haskellChar Character
+hi! link haskellFloat Float
+hi! link haskellNumber Number
+hi! link haskellTH Boolean
+
+hi! link haskellBottom Keyword
+hi! link haskellDecl Keyword
+hi! link haskellDeclKeyword Keyword
+hi! link haskellDefault Keyword
+hi! link haskellDeriveKeyword Keyword
+hi! link haskellInfix Keyword
+hi! link haskellKeyword Keyword
+hi! link haskellLet Keyword
+hi! link haskellPatternKeyword Keyword
+hi! link haskellRecursiveDo Keyword
+hi! link haskellTypeRoles Keyword
+hi! link haskellWhere Keyword
+
+hi! link haskellAssocType Type
+hi! link haskellBacktick Special
+hi! link haskellConditional Keyword
+hi! link haskellDelimiter Delimiter
+hi! link haskellForall Operator
+hi! link haskellForeignKeywords Include
+hi! link haskellIdentifier Identifier
+hi! link haskellImportKeywords Include
+hi! link haskellLiquid Comment
+hi! link haskellOperators Operator
+hi! link haskellPragma PreProc
+hi! link haskellPreProc PreProc
+hi! link haskellQuasiQuoted String
+hi! link haskellQuotedType Type
+hi! link haskellQuote String
+hi! link haskellSeparator Punctuation
+hi! link haskellShebang Comment
+hi! link haskellType Type
+
+" }}}
 " Html: {{{
 
 hi! link htmlTag Punctuation
@@ -1747,48 +1787,6 @@ hi! link javascriptSymbolStaticProp javascriptProp
 hi! link javascriptTypedArrayStaticProp javascriptProp
 hi! link javascriptURLUtilsProp javascriptProp
 hi! link javascriptXHRProp javascriptProp
-
-" }}}
-" Haskell: {{{
-
-hi! link haskellType GruvboxBlue
-hi! link haskellIdentifier GruvboxAqua
-hi! link haskellSeparator GruvboxFg4
-hi! link haskellDelimiter GruvboxOrange
-hi! link haskellOperators GruvboxPurple
-
-hi! link haskellBacktick GruvboxOrange
-hi! link haskellStatement GruvboxPurple
-hi! link haskellConditional GruvboxPurple
-
-hi! link haskellLet GruvboxRed
-hi! link haskellDefault GruvboxRed
-hi! link haskellWhere GruvboxRed
-hi! link haskellBottom GruvboxRedBold
-hi! link haskellImportKeywords GruvboxPurpleBold
-hi! link haskellDeclKeyword GruvboxOrange
-hi! link haskellDecl GruvboxOrange
-hi! link haskellDeriving GruvboxPurple
-hi! link haskellAssocType GruvboxAqua
-
-hi! link haskellNumber GruvboxAqua
-hi! link haskellPragma GruvboxRedBold
-
-hi! link haskellTH GruvboxAquaBold
-hi! link haskellForeignKeywords GruvboxGreen
-hi! link haskellKeyword GruvboxRed
-hi! link haskellFloat GruvboxAqua
-hi! link haskellInfix GruvboxPurple
-hi! link haskellQuote GruvboxGreenBold
-hi! link haskellShebang GruvboxYellowBold
-hi! link haskellLiquid GruvboxPurpleBold
-hi! link haskellQuasiQuoted GruvboxBlueBold
-hi! link haskellRecursiveDo GruvboxPurple
-hi! link haskellQuotedType GruvboxRed
-hi! link haskellPreProc GruvboxFg4
-hi! link haskellTypeRoles GruvboxRedBold
-hi! link haskellTypeForall GruvboxRed
-hi! link haskellPatternKeyword GruvboxBlue
 
 " }}}
 " Mail: {{{
