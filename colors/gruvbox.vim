@@ -1302,6 +1302,23 @@ hi! link DashboardFooter GruvboxPurple
 " }}}
 
 " Filetype specific -----------------------------------------------------------
+" C#: {{{
+
+hi! link csBraces Bracket
+hi! link csEndColon Punctuation
+hi! link csParens Bracket
+
+hi! link csLogicSymbols Operator
+hi! link csOpSymbols Operator
+hi! link csStorage Keyword
+hi! link csUnspecifiedStatement Statement
+
+hi! link csInterpolationAlignDel Punctuation
+hi! link csInterpolationDelimiter Punctuation
+hi! link csInterpolationFormatDel Punctuation
+hi! link csInterpolationFormat Special
+
+" }}}
 " Clojure: {{{
 
 hi! link clojureStringEscape Special
@@ -1801,19 +1818,6 @@ hi! link javascriptSymbolStaticProp javascriptProp
 hi! link javascriptTypedArrayStaticProp javascriptProp
 hi! link javascriptURLUtilsProp javascriptProp
 hi! link javascriptXHRProp javascriptProp
-
-" }}}
-" C#: {{{
-
-hi! link csBraces GruvboxFg1
-hi! link csEndColon GruvboxFg1
-hi! link csLogicSymbols GruvboxFg1
-hi! link csParens GruvboxFg3
-hi! link csOpSymbols GruvboxFg3
-hi! link csInterpolationDelimiter GruvboxFg3
-hi! link csInterpolationAlignDel GruvboxAquaBold
-hi! link csInterpolationFormat GruvboxAqua
-hi! link csInterpolationFormatDel GruvboxAquaBold
 
 " }}}
 " Rust: {{{
