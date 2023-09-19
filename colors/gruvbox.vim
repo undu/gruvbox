@@ -1484,6 +1484,20 @@ hi! link luaStringLongTag Special
 hi! link luaTable Bracket
 
 " }}}
+" Mail: {{{
+
+" Override some defaults defined by mail.vim
+" mail quoted text
+hi! link mailQuoted1 GruvBoxAqua
+hi! link mailQuoted2 GruvBoxPurple
+hi! link mailQuoted3 GruvBoxYellow
+hi! link mailQuoted4 GruvBoxGreen
+hi! link mailQuoted5 GruvBoxRed
+hi! link mailQuoted6 GruvBoxOrange
+
+hi! link mailSignature Comment
+
+" }}}
 " Markdown: {{{
 
 call s:HL('markdownItalic', s:fg3, s:none, s:italic)
@@ -1787,20 +1801,6 @@ hi! link javascriptSymbolStaticProp javascriptProp
 hi! link javascriptTypedArrayStaticProp javascriptProp
 hi! link javascriptURLUtilsProp javascriptProp
 hi! link javascriptXHRProp javascriptProp
-
-" }}}
-" Mail: {{{
-
-" Override some defaults defined by mail.vim
-" mail quoted text
-hi! link mailQuoted1 GruvBoxAqua
-hi! link mailQuoted2 GruvBoxPurple
-hi! link mailQuoted3 GruvBoxYellow
-hi! link mailQuoted4 GruvBoxGreen
-hi! link mailQuoted5 GruvBoxRed
-hi! link mailQuoted6 GruvBoxOrange
-
-hi! link mailSignature Comment
 
 " }}}
 " C#: {{{
