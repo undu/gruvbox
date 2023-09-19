@@ -690,6 +690,8 @@ call s:HL('Comment', s:gb.gray, s:none, s:italicize_comments)
 call s:HL('Todo', s:vim_fg, s:none, s:bold . s:italic)
 " Comment message "ERROR" keywords
 call s:HL('Error', s:gb.red, s:none, s:bold . s:inverse)
+" Links
+call s:HL('Link', s:gb.blue, s:none, s:underline)
 
 " Generic statement
 hi! link Statement GruvboxRed
@@ -1472,6 +1474,58 @@ hi! link rubyInterpolationDelimiter Macro
 hi! link rubyStringDelimiter String
 
 " }}}
+" Scala: {{{
+
+hi! link scalaCommentAnnotation Keyword
+hi! link scalaCommentCodeBlock Identifier
+hi! link scalaDocLinks Link
+hi! link scalaMultilineComment Comment
+hi! link scalaParamAnnotationValue Field
+hi! link scalaParameterAnnotation Keyword
+hi! link scalaShebang Comment
+hi! link scalaTrailingComment Comment
+
+hi! link scalaFString String
+hi! link scalaFInterpolation Operator
+hi! link scalaInterpolationBoundary Operator
+hi! link scalaInterpolationBrackets String
+hi! link scalaInterpolation Operator
+hi! link scalaIString String
+hi! link scalaString String
+hi! link scalaTripleFString String
+hi! link scalaTripleIString Operator
+hi! link scalaTripleIString String
+hi! link scalaTripleString String
+
+hi! link scalaCapitalWord Type
+hi! link scalaInstanceDeclaration Type
+hi! link scalaTypeAnnotation Identifier
+hi! link scalaTypeAnnotationParameter Special
+hi! link scalaTypeDeclaration TypeDef
+hi! link scalaTypeExtension Identifier
+hi! link scalaTypeOperator Identifier
+hi! link scalaTypePostExtension Operator
+hi! link scalaTypeTypeExtension Identifier
+hi! link scalaTypeTypePostDeclaration TypeDef
+hi! link scalaTypeTypePostExtension Operator
+
+hi! link scalaCaseFollowing Identifier
+hi! link scalaExternal Include
+hi! link scalaNameDefinition Identifier
+hi! link scalaSquareBracketsBrackets Identifier
+hi! link scalaSquareBrackets Identifier
+
+hi! link scalaKeyword Keyword
+hi! link scalaKeywordModifier Keyword
+
+hi! link scalaAnnotation Special
+hi! link scalaOperator Operator
+hi! link scalaSpecial Special
+
+hi! link scalaEscapedChar Special
+hi! link scalaNumber Number
+
+" }}}
 " TypeScript: {{{
 
 hi! link typescriptAssign Operator
@@ -1644,27 +1698,6 @@ hi! link javascriptSymbolStaticProp javascriptProp
 hi! link javascriptTypedArrayStaticProp javascriptProp
 hi! link javascriptURLUtilsProp javascriptProp
 hi! link javascriptXHRProp javascriptProp
-
-" }}}
-" Scala: {{{
-
-" NB: scala vim syntax file is kinda horrible
-hi! link scalaNameDefinition GruvboxFg1
-hi! link scalaCaseFollowing GruvboxFg1
-hi! link scalaCapitalWord GruvboxFg1
-hi! link scalaTypeExtension GruvboxFg1
-
-hi! link scalaKeyword GruvboxRed
-hi! link scalaKeywordModifier GruvboxRed
-
-hi! link scalaSpecial GruvboxAqua
-hi! link scalaOperator GruvboxFg1
-
-hi! link scalaTypeDeclaration GruvboxYellow
-hi! link scalaTypeTypePostDeclaration GruvboxYellow
-
-hi! link scalaInstanceDeclaration GruvboxFg1
-hi! link scalaInterpolation GruvboxAqua
 
 " }}}
 " Markdown: {{{
