@@ -862,7 +862,7 @@ if has('nvim')
 endif
 
 " LSP highlighting
-if has('nvim-0.7')
+if has('nvim-0.7.3')
   hi! link @lsp.type.member Function
   hi! link @lsp.type.property Field
   hi! link @lsp.typemod.variable.defaultLibrary @variable.builtin
@@ -871,7 +871,7 @@ endif
 " }}}
 " Treesitter: {{{
 
-if has('nvim-0.7')
+if has('nvim-0.7.3')
   hi! link @comment Comment
   hi! link @error Error
   hi! link @none NONE
