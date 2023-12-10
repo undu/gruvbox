@@ -736,7 +736,11 @@ hi! link Noise Punctuation
 hi! link Keyword GruvboxRed
 
 " Variable name
-hi! link Identifier GruvboxFg1
+if g:gruvbox_legacy_language_groups
+  hi! link Identifier GruvboxFg1
+else
+  hi! link Identifier GruvboxBlue
+endif
 " Field/attribute names
 hi! link Field GruvboxAqua
 " Tag names
@@ -774,12 +778,18 @@ hi! link Float GruvboxPurple
 
 " Generic type
 hi! link Type GruvboxYellow
-" static, register, volatile, etc
-hi! link StorageClass GruvboxYellow
-" struct, union, enum, etc.
-hi! link Structure GruvboxYellow
-" typedef
-hi! link Typedef GruvboxYellow
+if g:gruvbox_legacy_language_groups
+  " Generic type
+  hi! link StorageClass GruvboxOrange
+  " struct, union, enum, etc.
+  hi! link Structure GruvboxAqua
+  " typedef
+  hi! link Typedef GruvboxYellow
+else
+  hi! link StorageClass GruvboxYellow
+  hi! link Structure GruvboxYellow
+  hi! link Typedef GruvboxYellow
+endif
 
 " }}}
 " Completion Menu: {{{
