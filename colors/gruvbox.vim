@@ -737,9 +737,9 @@ hi! link Keyword GruvboxRed
 
 " Variable name
 if g:gruvbox_legacy_language_groups
-  hi! link Identifier GruvboxFg1
-else
   hi! link Identifier GruvboxBlue
+else
+  hi! link Identifier GruvboxFg1
 endif
 " Field/attribute names
 hi! link Field GruvboxAqua
