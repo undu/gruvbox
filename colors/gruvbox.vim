@@ -1549,6 +1549,14 @@ hi! link markdownUrlTitleDelimiter Punctuation
 hi! link markdownLinkText Identifier
 hi! link markdownIdDeclaration Identifier
 
+if has('nvim-0.7.3')
+  hi link @text.title.1.marker.markdown Special
+  hi link @text.title.2.marker.markdown Special
+  hi link @text.title.3.marker.markdown Special
+  hi link @text.title.4.marker.markdown Special
+  hi link @text.title.5.marker.markdown Special
+endif
+
 " }}}
 " MoonScript: {{{
 
