@@ -78,6 +78,10 @@ if !exists('g:gruvbox_contrast_light')
   let g:gruvbox_contrast_light='medium'
 endif
 
+if !exists('g:gruvbox_treesitter')
+  let g:gruvbox_treesitter=has('nvim-0.7.3')
+endif
+
 let s:is_dark=(&background ==# 'dark')
 
 " }}}
@@ -862,7 +866,7 @@ if has('nvim')
 endif
 
 " LSP highlighting
-if has('nvim-0.7.3')
+if g:gruvbox_treesitter
   hi! link @lsp.type.member Function
   hi! link @lsp.type.property Field
   hi! link @lsp.typemod.variable.defaultLibrary @variable.builtin
@@ -871,7 +875,7 @@ endif
 " }}}
 " Treesitter: {{{
 
-if has('nvim-0.7.3')
+if g:gruvbox_treesitter
   hi! link @comment Comment
   hi! link @error Error
   hi! link @none NONE
@@ -1549,7 +1553,7 @@ hi! link markdownUrlTitleDelimiter Punctuation
 hi! link markdownLinkText Identifier
 hi! link markdownIdDeclaration Identifier
 
-if has('nvim-0.7.3')
+if g:gruvbox_treesitter
   hi link @text.title.1.marker.markdown Special
   hi link @text.title.2.marker.markdown Special
   hi link @text.title.3.marker.markdown Special
