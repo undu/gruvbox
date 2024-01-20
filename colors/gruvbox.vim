@@ -894,7 +894,9 @@ if g:gruvbox_treesitter
   hi! link @error Error
   hi! link @none NONE
   hi! link @preproc PreProc
+  hi! link @keyword.directive PreProc
   hi! link @define Define
+  hi! link @keyword.directive.define Define
   hi! link @operator Operator
 
   hi! link @punctuation Punctuation
@@ -904,6 +906,7 @@ if g:gruvbox_treesitter
 
   hi! link @string String
   "hi! link @string.regex String
+  "hi! link @string.regexp String
   hi! link @string.escape Special
   "hi! link @string.special Special
 
@@ -913,6 +916,7 @@ if g:gruvbox_treesitter
   hi! link @boolean Boolean
   hi! link @number Number
   hi! link @float Float
+  hi! link @number.float Float
 
   hi! link @function Function
   "hi! link @function.builtin Special
@@ -920,10 +924,13 @@ if g:gruvbox_treesitter
   hi! link @function.macro Macro
 
   hi! link @method Function
+  hi! link @function.method Function
   hi! link @method.call Function
+  hi! link @function.method.call Function
 
   hi! link @constructor Function
   hi! link @parameter Identifier
+  hi! link @variable.parameter Identifier
 
   hi! link @keyword Keyword
   "hi! link @keyword.function Function
@@ -931,14 +938,20 @@ if g:gruvbox_treesitter
   "hi! link @keyword.return Special
 
   hi! link @conditional Conditional
+  hi! link @keyword.conditional Conditional
   hi! link @conditional.ternary Operator
+  hi! link @keyword.conditional.ternary Operator
   hi! link @repeat Repeat
+  hi! link @keyword.repeat Repeat
   hi! link @debug Debug
+  hi! link @keyword.debug Debug
   hi! link @label Label
   " Fix JSON fields appearing as labels (supposed to be "case", "default", etc.)
   hi! link @label.json Field
   hi! link @include Include
+  hi! link @keyword.import Include
   hi! link @exception Exception
+  hi! link @keyword.exception Exception
 
   hi! link @type Type
   "hi! link @type.builtin Type
@@ -946,8 +959,10 @@ if g:gruvbox_treesitter
   hi! link @type.definition Typedef
 
   hi! link @storageclass StorageClass
+  hi! link @keyword.storage StorageClass
   hi! link @attribute PreProc
   hi! link @field Field
+  hi! link @variable.member Field
   hi! link @property Field
 
   hi! link @variable Identifier
@@ -958,25 +973,39 @@ if g:gruvbox_treesitter
   hi! link @constant.macro Macro
 
   hi! link @namespace Include
+  hi! link @module Include
   "hi! link @symbol Identifier
+  "hi! link @string.special.symbol Identifier
 
   hi! link @text Text
   hi! link @text.strong Bold
+  hi! link @markup.strong Bold
   hi! link @text.emphasis Bold
   hi! link @text.underline Underlined
+  hi! link @markup.underline Underlined
   hi! link @text.strike Strikethrough
+  hi! link @markup.strikethrough Strikethrough
   hi! link @text.title Title
+  hi! link @markup.heading Title
   hi! link @text.literal String
+  hi! link @markup.raw String
   hi! link @text.uri Link
+  hi! link @string.special.url Link
+  hi! link @markup.link.url Link
   hi! link @text.math Special
   hi! link @text.environment PreProc
   hi! link @text.environment.name Delimiter
   hi! link @text.reference Identifier
+  hi! link @markup.link Identifier
 
   hi! link @text.todo Todo
+  hi! link @comment.todo Todo
   hi! link @text.note SpecialComment
+  hi! link @comment.info SpecialComment
   hi! link @text.danger Error
+  hi! link @comment.error Error
   hi! link @text.warning WarningMsg
+  hi! link @comment.warning WarningMsg
 
   hi! link @tag Tag
   hi! link @tag.attribute Field
