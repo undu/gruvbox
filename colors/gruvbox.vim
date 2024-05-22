@@ -722,15 +722,15 @@ hi! link Conditional GruvboxRed
 " for, do, while, etc.
 hi! link Repeat GruvboxRed
 " case, default, etc.
-hi! link Label GruvboxRed
+hi! link Label GruvboxBlue
 " try, catch, throw
 hi! link Exception GruvboxRed
 " sizeof, "+", "*", etc.
 call s:HL('Operator', s:gb.orange, s:none, s:italicize_operators)
 " Punctuation
 hi! link Punctuation GruvboxBlue
-hi! link Delimiter Punctuation
-hi! link Bracket Punctuation
+hi! link Delimiter GruvboxOrange
+hi! link Bracket GruvboxFg3
 hi! link Noise Punctuation
 " Any other keyword
 hi! link Keyword GruvboxRed
@@ -778,18 +778,9 @@ hi! link Float GruvboxPurple
 
 " Generic type
 hi! link Type GruvboxYellow
-if g:gruvbox_legacy_language_groups
-  " Generic type
-  hi! link StorageClass GruvboxOrange
-  " struct, union, enum, etc.
-  hi! link Structure GruvboxAqua
-  " typedef
-  hi! link Typedef GruvboxYellow
-else
-  hi! link StorageClass GruvboxYellow
-  hi! link Structure GruvboxYellow
-  hi! link Typedef GruvboxYellow
-endif
+hi! link StorageClass GruvboxOrange
+hi! link Structure GruvboxAqua
+hi! link Typedef Type
 
 " }}}
 " Completion Menu: {{{
